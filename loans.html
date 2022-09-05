@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Loans</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+        theme: {
+        extend: {
+        fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        },
+        }
+        }
+    }
+    </script> -->
+
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+
+
+</head>
+<body class="font-sans">
+    
+     <!-- menu -->
+     <nav class="w-full bg-mainBackground text-darkColor border-gray-200 px-2 sm:px-4 py-2.5 rounded   ">
+        <div class=" flex flex-wrap max-w-5xl mx-auto py-4 justify-between items-center">
+        
+        <a href="index.html" class="flex items-center">
+        <img src="images/zennal.png" class="mr-3 h-10 sm:h-14" alt="Zennal Logo">
+           
+        </a>
+    
+        <div class="flex md:order-2">
+  
+        <a href="https://app.myzennal.com/portal/login" class="bg-lightBlue hover:bg-secondaryColor hidden md:block p-2 w-24 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">Login</a>
+
+        <button data-collapse-toggle="mobile-menu-4" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200     aria-controls="mobile-menu-4" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+        </div>
+        
+        <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-4">
+        <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+        <li>
+        <a href="index.html" class="block py-2 pr-4 pl-3  bg-secondaryColor rounded md:bg-transparent md:text-primaryBlue md:p-0   " aria-current="page">Home</a>
+        </li>
+        <li>
+        <a href="loans.html" class="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 text-secondaryColor md:p-0      ">Loans</a>
+        </li>
+         <li>
+        <a href="auto_insurance.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-secondaryColor md:p-0      ">Auto Insurance</a>
+        </li>
+        <li>
+            <a href="vehicle_documentation.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-secondaryColor md:p-0      ">Vehicle Documentation</a>
+        </li>
+        <li>
+            <a href="about.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-secondaryColor md:p-0      ">About Us</a>
+        </li>
+        <li>
+        <a href="contact.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-secondaryColor md:p-0      ">Contact</a>
+        </li>
+        <li>
+            <a href="https://app.myzennal.com/portal/login" class="bg-secondaryColor block md:hidden p-2 w-24 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">Login</a>
+        </li>
+        </ul>
+        </div>
+    
+        </div>
+       </nav>
+
+      <!-- loans -->
+      <div class="max-w-full relative mb-0 py-8 px-4 md:px-0 md:py-14 bg-mainBackground">
+        <img src="images/index2.jpg" class="absolute z-20 h-full w-full right-32 bottom-0 object-cover opacity-25" alt="">
+        <div class=" w-full grid md:grid-cols-2 gap-8 md:gap-16 md:justify-between md:items-center md:max-w-5xl md:mx-auto">
+               <div class="space-y-10 md:space-y-14 ">
+                   <div class="max-w-xl">
+                       <h2 class="text-primaryBlue text-4xl font-extrabold text-left leading-normal">Get Your Quick Loans Anytime, Anywhere</h2>
+                       <p class="mt-4 text-darkColor">Access loans to meet emergency personal needs at affordable rates and instant disbursement into your bank account</p>
+                   </div>
+                   <div>
+                    <a href="https://app.myzennal.com/portal/register" class="bg-secondaryColor absolute z-30 text-center inline mr-3 rounded-xl p-3 w-36 mt-5 text-sm">Get Started</a>
+                    <!-- <span class="flex justify-between items-center">
+                        <svg width="34" height="8" viewBox="0 0 34 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M33.3536 4.35355C33.5488 4.15829 33.5488 3.84171 33.3536 3.64645L30.1716 0.464466C29.9763 0.269204 29.6597 0.269204 29.4645 0.464466C29.2692 0.659728 29.2692 0.976311 29.4645 1.17157L32.2929 4L29.4645 6.82843C29.2692 7.02369 29.2692 7.34027 29.4645 7.53553C29.6597 7.7308 29.9763 7.7308 30.1716 7.53553L33.3536 4.35355ZM0 4.5H33V3.5H0V4.5Z" fill="black"/>
+                        </svg>
+                        <span class="ml-2"> Learn more</span>
+                       
+                    </span> -->
+                   </div>
+               </div>
+                <div class=" md:h-auto md:justify-self-end mt-8 md:mt-0 rounded-3xl w-full md:w-1/2">
+                   <img src="images/loanhero.png" class="h-full w-full z-10 object-cover" alt="">
+              </div>
+         </div>
+       </div>
+
+
+     <!-- register new vehicle -->
+     <div class="max-w-full mx-auto my-10 px-4 md:px-14  py-16 bg-anotherGray ">
+        <div class="grid md:grid-cols-2 gap-10 items-start w-full md:max-w-5xl md:mx-auto">
+             <div class="h-full  order-2  md:order-1">
+                 <h3 class="font-bold text-2xl text-primaryBlue">Are you a salary earner?</h3>
+                 <p class="mt-6 text-darkColor">Get your instant loan in minutes! </p>
+                 <div class="mt-6 text-lightGray text-sm">
+                     <ul>
+                        <li>
+                            Voila!, you can now get loans easily as a salary earner if remita is used to disburse your salary.
+                        </li>
+                     </ul>
+                    <button class="bg-primaryBlue rounded-xl p-2 w-24 mt-6 mb-6 text-sm text-white"><a href="https://app.myzennal.com/portal/register.php">Learn More</a></button>  
+                 </div>
+             </div>
+             <div class="order-1 md:order-2 px-0 md:px-4"> 
+                <img src="images/nopaperwork.png" alt="">
+             </div>
+        </div>
+       </div>
+
+    <!-- why process with zennal -->
+    <div class="max-w-6xl mx-auto py-5 md:py-8 bg-white">
+     
+        <div class=" leading-relaxed">
+            <h3 class="text-primaryBlue text-2xl font-semibold text-center ">Why choose Zennal?</h3>
+            <p class="text-darkColor mt-3 md:mt-6 text-center">Why Choose Us</p>
+       </div>
+
+       <div class="grid md:grid-cols-4 px-2 md:px-0 gap-3 my-10 bg-white">
+                <div class="rounded-xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                    <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="75" height="75" rx="10" fill="#022B69"/>
+                    <path d="M36.1665 42.1667L45.6665 32.6667L43.9165 30.9583L36.2915 38.5833L32.0832 34.375L30.2498 36.2083L36.1665 42.1667ZM37.9998 53.625C34.1109 52.6528 30.9165 50.3958 28.4165 46.8542C25.9165 43.3125 24.6665 39.4306 24.6665 35.2083V25.2917L37.9998 20.2917L51.3332 25.2917V35.2083C51.3332 39.4306 50.0832 43.3125 47.5832 46.8542C45.0832 50.3958 41.8887 52.6528 37.9998 53.625Z" fill="white"/>
+                    </svg>                   
+                    <h4 class="text-primaryBlue font-bold mt-6 text-xl">Paperless administration</h4>
+                    <p class="mt-6 text-sm text-left">Apply and get decision in a few minutes online – no forms or paperwork.</p>                         
+                </div>      
+
+               <div class="rounded-xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                   <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <rect width="75" height="75" rx="10" fill="#022B69"/>
+                       <path d="M39.3332 36.4167L44.1248 41.125C44.3748 41.375 44.4998 41.6736 44.4998 42.0208C44.4998 42.3681 44.3748 42.6667 44.1248 42.9167C43.8748 43.1667 43.5832 43.2917 43.2498 43.2917C42.9165 43.2917 42.6248 43.1667 42.3748 42.9167L37.2082 37.8333C37.0693 37.6944 36.9721 37.5486 36.9165 37.3958C36.8609 37.2431 36.8332 37.0833 36.8332 36.9167V29.7917C36.8332 29.4306 36.9512 29.1319 37.1873 28.8958C37.4234 28.6597 37.7221 28.5417 38.0832 28.5417C38.4443 28.5417 38.7429 28.6597 38.979 28.8958C39.2151 29.1319 39.3332 29.4306 39.3332 29.7917V36.4167ZM38.1665 52C36.0832 52 34.1248 51.6042 32.2915 50.8125C30.4582 50.0208 28.854 48.9444 27.479 47.5833C26.104 46.2222 25.0207 44.625 24.229 42.7917C23.4373 40.9583 23.0415 39 23.0415 36.9167C23.0415 34.8333 23.4373 32.8889 24.229 31.0833C25.0207 29.2778 26.104 27.7014 27.479 26.3542C28.854 25.0069 30.4582 23.9444 32.2915 23.1667C34.1248 22.3889 36.0832 22 38.1665 22C40.3887 22 42.4929 22.4861 44.479 23.4583C46.4651 24.4306 48.1804 25.7639 49.6248 27.4583V24.2917C49.6248 23.9306 49.7429 23.6319 49.979 23.3958C50.2151 23.1597 50.5137 23.0417 50.8748 23.0417C51.2359 23.0417 51.5346 23.1597 51.7707 23.3958C52.0068 23.6319 52.1248 23.9306 52.1248 24.2917V30.4583C52.1248 30.8194 52.0068 31.1181 51.7707 31.3542C51.5346 31.5903 51.2359 31.7083 50.8748 31.7083H44.6665C44.3054 31.7083 44.0068 31.5903 43.7707 31.3542C43.5346 31.1181 43.4165 30.8194 43.4165 30.4583C43.4165 30.0972 43.5346 29.7986 43.7707 29.5625C44.0068 29.3264 44.3054 29.2083 44.6665 29.2083H47.7915C46.5693 27.7917 45.1318 26.6528 43.479 25.7917C41.8262 24.9306 40.0554 24.5 38.1665 24.5C34.6943 24.5 31.7221 25.6875 29.2498 28.0625C26.7776 30.4375 25.5415 33.3472 25.5415 36.7917C25.5415 40.3194 26.7637 43.3194 29.2082 45.7917C31.6526 48.2639 34.6387 49.5 38.1665 49.5C41.3887 49.5 44.1248 48.4583 46.3748 46.375C48.6248 44.2917 49.9859 41.6944 50.4582 38.5833C50.5137 38.25 50.6665 37.9653 50.9165 37.7292C51.1665 37.4931 51.4582 37.3889 51.7915 37.4167C52.1804 37.4444 52.479 37.5972 52.6873 37.875C52.8957 38.1528 52.9721 38.4861 52.9165 38.875C52.3887 42.625 50.7707 45.75 48.0623 48.25C45.354 50.75 42.0554 52 38.1665 52Z" fill="white"/>
+                   </svg>            
+                   <h4 class="text-primaryBlue font-bold mt-6 text-xl">Fast</h4>
+                   <p class="mt-6 text-sm text-left">Apply in a few minutes online no more repeated calls to agents before getting your vehicle documents processed</p>                         
+               </div>
+
+               <div class="rounded-xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="75" height="75" rx="10" fill="#022B69"/>
+                    <path d="M38.0002 53.6667C35.6391 53.6667 33.4446 53.243 31.4168 52.3958C29.3891 51.5486 27.6252 50.375 26.1252 48.875C24.6252 47.375 23.4516 45.6111 22.6043 43.5833C21.7571 41.5555 21.3335 39.3611 21.3335 37C21.3335 34.6667 21.7571 32.4861 22.6043 30.4583C23.4516 28.4305 24.6252 26.6667 26.1252 25.1667C27.6252 23.6667 29.3891 22.4861 31.4168 21.625C33.4446 20.7639 35.6391 20.3333 38.0002 20.3333C40.3335 20.3333 42.5141 20.7639 44.5418 21.625C46.5696 22.4861 48.3335 23.6667 49.8335 25.1667C51.3335 26.6667 52.5141 28.4305 53.3752 30.4583C54.2363 32.4861 54.6668 34.6667 54.6668 37C54.6668 39.3611 54.2363 41.5555 53.3752 43.5833C52.5141 45.6111 51.3335 47.375 49.8335 48.875C48.3335 50.375 46.5696 51.5486 44.5418 52.3958C42.5141 53.243 40.3335 53.6667 38.0002 53.6667ZM29.6668 38.125H46.3335V35.625H29.6668V38.125Z" fill="white"/>
+                </svg>             
+                <h4 class="text-primaryBlue font-bold mt-4 text-xl">No hidden fees</h4>
+                <p class="mt-6 text-sm text-left">Our technology means no more paying an insurance agent. If you ever need to buy a car insurance, it’s all online, instant and no admin or processing fees. You only pay for your premium based on the value of your car</p>                         
+                </div>
+
+                <div class="rounded-2xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                    <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="75" height="75" rx="10" fill="#022B69"/>
+                        <path d="M25.5 53.6666C24.8056 53.6666 24.2153 53.4236 23.7292 52.9375C23.2431 52.4514 23 51.8611 23 51.1666V25.3333C23 24.6389 23.2431 24.0486 23.7292 23.5625C24.2153 23.0764 24.8056 22.8333 25.5 22.8333H28.2083V21.6666C28.2083 21.2778 28.3403 20.9583 28.6042 20.7083C28.8681 20.4583 29.1944 20.3333 29.5833 20.3333C29.9722 20.3333 30.2917 20.4583 30.5417 20.7083C30.7917 20.9583 30.9167 21.2778 30.9167 21.6666V22.8333H45.0833V21.6666C45.0833 21.2778 45.2153 20.9583 45.4792 20.7083C45.7431 20.4583 46.0694 20.3333 46.4583 20.3333C46.8472 20.3333 47.1667 20.4583 47.4167 20.7083C47.6667 20.9583 47.7917 21.2778 47.7917 21.6666V22.8333H50.5C51.1944 22.8333 51.7847 23.0764 52.2708 23.5625C52.7569 24.0486 53 24.6389 53 25.3333V37.8333H50.5V33.25H25.5V51.1666H39V53.6666H25.5ZM49.6667 57C47.9722 57 46.4444 56.5555 45.0833 55.6666C43.7222 54.7778 42.7222 53.6111 42.0833 52.1666C41.8611 51.6944 41.8819 51.2708 42.1458 50.8958C42.4097 50.5208 42.7917 50.3333 43.2917 50.3333C43.5694 50.3333 43.7917 50.4028 43.9583 50.5416C44.125 50.6805 44.25 50.8611 44.3333 51.0833C44.8056 52.1111 45.5139 52.9375 46.4583 53.5625C47.4028 54.1875 48.4722 54.5 49.6667 54.5C51.2778 54.5 52.6528 53.9305 53.7917 52.7916C54.9306 51.6528 55.5 50.2778 55.5 48.6666C55.5 47.0555 54.9306 45.6805 53.7917 44.5416C52.6528 43.4028 51.2778 42.8333 49.6667 42.8333C48.8611 42.8333 48.1111 42.9791 47.4167 43.2708C46.7222 43.5625 46.1111 43.9722 45.5833 44.5H46.75C47.1111 44.5 47.4097 44.618 47.6458 44.8541C47.8819 45.0903 48 45.3889 48 45.75C48 46.1111 47.8819 46.4097 47.6458 46.6458C47.4097 46.8819 47.1111 47 46.75 47H42.5833C42.2222 47 41.9236 46.8819 41.6875 46.6458C41.4514 46.4097 41.3333 46.1111 41.3333 45.75V41.5833C41.3333 41.2222 41.4514 40.9236 41.6875 40.6875C41.9236 40.4514 42.2222 40.3333 42.5833 40.3333C42.9444 40.3333 43.2431 40.4514 43.4792 40.6875C43.7153 40.9236 43.8333 41.2222 43.8333 41.5833V42.7083C44.5833 41.9861 45.4583 41.4097 46.4583 40.9791C47.4583 40.5486 48.5278 40.3333 49.6667 40.3333C51.9722 40.3333 53.9375 41.1458 55.5625 42.7708C57.1875 44.3958 58 46.3611 58 48.6666C58 50.9722 57.1875 52.9375 55.5625 54.5625C53.9375 56.1875 51.9722 57 49.6667 57Z" fill="white"/>
+                    </svg>
+                        
+                    <h4 class="text-primaryBlue font-bold mt-4 text-xl">Available 24/7</h4>
+                    <p class="mt-6 text-sm text-left">It is available all year round and everywhere provided you are connected to internet</p>                         
+                </div>
+
+                <div class="rounded-2xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                    <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="75" height="75" rx="10" fill="#022B69"/>
+                        <path d="M37.375 40.125C37.4863 40.403 37.6947 40.542 38 40.542C38.3053 40.542 38.5137 40.403 38.625 40.125L40.417 36.083L44.458 34.292C44.736 34.1807 44.875 33.9723 44.875 33.667C44.875 33.361 44.736 33.1527 44.458 33.042L40.417 31.25L38.625 27.208C38.5137 26.9307 38.3053 26.792 38 26.792C37.6947 26.792 37.4863 26.9307 37.375 27.208L35.583 31.25L31.542 33.042C31.264 33.1527 31.125 33.361 31.125 33.667C31.125 33.9723 31.264 34.1807 31.542 34.292L35.583 36.083L37.375 40.125ZM21.333 50.333V23.125C21.333 22.375 21.611 21.7223 22.167 21.167C22.7223 20.611 23.375 20.333 24.125 20.333H51.875C52.625 20.333 53.2777 20.611 53.833 21.167C54.389 21.7223 54.667 22.375 54.667 23.125V44.208C54.667 44.958 54.389 45.611 53.833 46.167C53.2777 46.7223 52.625 47 51.875 47H28L23.708 51.292C23.264 51.736 22.7573 51.84 22.188 51.604C21.618 51.368 21.333 50.9443 21.333 50.333Z" fill="white"/>
+                    </svg>            
+                    <h4 class="text-primaryBlue font-bold mt-4 text-xl"> Excellent Customer Service</h4>
+                    <p class="mt-6 text-sm text-left">Our unique offering means you can purchase your car insurance and spread your premium payments for up to 6 months with our zero interest loans</p>                         
+                </div>
+
+                <div class="rounded-xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                    <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="75" height="75" rx="10" fill="#022B69"/>
+                        <path d="M26.667 46.417V33.125H29.458V46.417H26.667ZM36.708 46.417V33.125H39.5V46.417H36.708ZM21.333 51.958V49.208H54.667V51.958H21.333ZM46.542 46.417V33.125H49.333V46.417H46.542ZM21.333 30.333V27.75L38 18.625L54.667 27.75V30.333H21.333Z" fill="white"/>
+                        </svg>
+                        
+                                  
+                    <h4 class="text-primaryBlue font-bold mt-4 text-xl"> Money in your bank account</h4>
+                    <p class="mt-6 text-sm text-left">Earn money anytime you purchase your car insurance, repay instalments on time and give referrals. Earned points will be converted to cash</p>                         
+                </div>
+
+                <div class="rounded-xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                    <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="75" height="75" rx="10" fill="#022B69"/>
+                        <path d="M38 18.667C40.222 18.667 42.118 19.4517 43.688 21.021C45.2573 22.5903 46.042 24.486 46.042 26.708V30.5H48.542C49.3193 30.5 49.979 30.7707 50.521 31.312C51.0623 31.854 51.333 32.514 51.333 33.292V50.875C51.333 51.653 51.0623 52.3127 50.521 52.854C49.979 53.396 49.3193 53.667 48.542 53.667H27.458C26.6807 53.667 26.021 53.396 25.479 52.854C24.9377 52.3127 24.667 51.653 24.667 50.875V33.292C24.667 32.514 24.9377 31.854 25.479 31.312C26.021 30.7707 26.6807 30.5 27.458 30.5H29.958V26.708C29.958 24.486 30.7427 22.5903 32.312 21.021C33.882 19.4517 35.778 18.667 38 18.667ZM38 21.458C36.528 21.458 35.278 21.972 34.25 23C33.222 24.028 32.708 25.264 32.708 26.708V30.5H43.292V26.708C43.292 25.264 42.778 24.028 41.75 23C40.722 21.972 39.472 21.458 38 21.458ZM38 38.833C37.1113 38.833 36.3473 39.1663 35.708 39.833C35.0693 40.4997 34.75 41.2777 34.75 42.167C34.75 43.0277 35.0693 43.7707 35.708 44.396C36.3473 45.0207 37.1113 45.333 38 45.333C38.8887 45.333 39.6527 45.0207 40.292 44.396C40.9307 43.7707 41.25 43.0137 41.25 42.125C41.25 41.2637 40.9307 40.4997 40.292 39.833C39.6527 39.1663 38.8887 38.833 38 38.833Z" fill="white"/>
+                        </svg>
+                        
+                                  
+                    <h4 class="text-primaryBlue font-bold mt-4 text-xl"> Data protection</h4>
+                    <p class="mt-6 text-sm text-left">All your data and information provided on Zennal App & website is safe and encrypted using SSL technology</p>                         
+                </div>
+
+
+
+               <div class="rounded-xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="75" height="75" rx="10" fill="#022B69"/>
+                    <path d="M24.125 45.417V49.208H51.875V45.417H24.125ZM24.125 52C23.347 52 22.6873 51.7293 22.146 51.188C21.604 50.646 21.333 49.986 21.333 49.208V29.792C21.333 29.014 21.604 28.354 22.146 27.812C22.6873 27.2707 23.347 27 24.125 27H28.792C28.6527 26.75 28.5483 26.4513 28.479 26.104C28.4097 25.7567 28.375 25.4303 28.375 25.125C28.375 23.7917 28.8473 22.6597 29.792 21.729C30.736 20.7983 31.861 20.333 33.167 20.333C34.0003 20.333 34.778 20.5483 35.5 20.979C36.222 21.4097 36.8193 21.9583 37.292 22.625L38 23.708L38.75 22.625C39.222 21.9303 39.8053 21.3747 40.5 20.958C41.1947 20.5413 41.9587 20.333 42.792 20.333C44.1253 20.333 45.264 20.7983 46.208 21.729C47.1527 22.6597 47.625 23.8057 47.625 25.167C47.625 25.4443 47.5903 25.736 47.521 26.042C47.4517 26.3473 47.3473 26.6667 47.208 27H51.875C52.653 27 53.3127 27.2707 53.854 27.812C54.396 28.354 54.667 29.014 54.667 29.792V49.208C54.667 49.986 54.396 50.646 53.854 51.188C53.3127 51.7293 52.653 52 51.875 52H24.125ZM24.125 40.792H51.875V29.792H42.125L45.292 34.125C45.514 34.4303 45.5833 34.7567 45.5 35.104C45.4167 35.4513 45.25 35.764 45 36.042C44.6667 36.292 44.3127 36.389 43.938 36.333C43.5627 36.2777 43.264 36.0833 43.042 35.75L38 28.792L32.917 35.75C32.667 36.0833 32.3543 36.2777 31.979 36.333C31.6043 36.389 31.292 36.292 31.042 36.042C30.7087 35.792 30.521 35.4863 30.479 35.125C30.4377 34.7637 30.528 34.4303 30.75 34.125L33.833 29.792H24.125V40.792ZM33.208 27.167C33.764 27.167 34.2363 26.9723 34.625 26.583C35.0137 26.1943 35.208 25.7083 35.208 25.125C35.208 24.5697 35.0137 24.0973 34.625 23.708C34.2363 23.3193 33.764 23.125 33.208 23.125C32.6247 23.125 32.1387 23.3193 31.75 23.708C31.3613 24.0973 31.167 24.5697 31.167 25.125C31.167 25.7083 31.3613 26.1943 31.75 26.583C32.1387 26.9723 32.6247 27.167 33.208 27.167ZM42.792 27.167C43.3753 27.167 43.8613 26.9723 44.25 26.583C44.6387 26.1943 44.833 25.7083 44.833 25.125C44.833 24.5697 44.6387 24.0973 44.25 23.708C43.8613 23.3193 43.3753 23.125 42.792 23.125C42.236 23.125 41.7637 23.3193 41.375 23.708C40.9863 24.0973 40.792 24.5697 40.792 25.125C40.792 25.7083 40.9863 26.1943 41.375 26.583C41.7637 26.9723 42.236 27.167 42.792 27.167Z" fill="white"/>
+                    </svg>
+                              
+                <h4 class="text-primaryBlue font-bold mt-4 text-xl">We give back</h4>
+                <p class="mt-6 text-sm text-left">AEarn money anytime you purchase your car insurance, repay instalments on time and give referrals. Earned points will be converted to cash</p>                         
+            </div>
+
+       </div>
+
+   
+    </div>
+      
+      <!-- how it works -->
+      <div class="max-w-full mx-auto py-8 bg-mainBackground">
+
+            <div class="leading-relaxed">
+                <h3 class="text-primaryBlue text-2xl font-semibold text-center ">How to apply for Zennal Quick Loans</h3>
+                <p class="text-darkColor mt-6 text-center">How It Works</p>
+            </div>
+
+        <div class="relative grid px-2 md:px-0 md:grid-cols-3 gap-4 my-7 max-w-5xl mx-auto bg-mainBackground  ">
+                 <div style='background-image: url(images/1.png); padding-right:24px;'  class="rounded-xl text-lightGray pl-4 py-8 w-full bg-white bg-no-repeat bg-right">
+                    <h4 class="text-darkColor font-bold mt-4 text-xl">Zennal Website</h4>   
+                    <p class="mt-4 text-sm text-left">Click on “My Account” on the Zennal Website</p>
+                </div>
+
+                <div style='background-image: url(images/2.png); padding-right:24px;'  class="rounded-xl text-lightGray pl-4 py-8 w-full bg-white bg-no-repeat bg-right">
+                    <h4 class="text-darkColor font-bold mt-4 text-lg">Create your account</h4>   
+                    <p class="mt-4 text-sm text-left">Simply provide us with your vehicle details</p>                         
+                </div>
+
+                <div style='background-image: url(images/3.png); padding-right:24px;'  class="rounded-xl text-lightGray pl-4 py-8 w-full bg-white bg-no-repeat bg-right">
+                    <h4 class="text-darkColor font-bold mt-4 text-lg">Apply for your loan</h4>   
+                    <p class="mt-4 text-sm text-left">State the amount you wish to borrow </p>                         
+                </div>
+
+                <div style='background-image: url(images/4.png); padding-right:24px;'  class="rounded-xl text-lightGray pl-4 py-8 w-full bg-white bg-no-repeat bg-right">
+                    <h4 class="text-darkColor font-bold mt-4 text-lg">Check Eligibility</h4>   
+                    <p class="mt-4 text-sm text-left">Your personal details will be needed to determine your eligibility for this loan</p>                         
+                </div>
+
+                <div style='background-image: url(images/5.png); padding-right:24px;'  class="rounded-xl text-lightGray pl-4 py-8 w-full bg-white bg-no-repeat bg-right">
+                    <h4 class="text-darkColor font-bold mt-4 text-lg">Accept loan offer</h4>   
+                    <p class="mt-4 text-sm text-left">We accept the loan amount and repayment terms</p>
+                </div>
+
+
+                <div style='background-image: url(images/6.png); padding-right:24px;'  class="rounded-xl text-lightGray pl-4 py-8 w-full bg-white bg-no-repeat bg-right">
+                    <h4 class="text-darkColor font-bold mt-4 text-lg">Receive funds in your bank accounts</h4>   
+                    <p class="mt-4 text-sm text-left">If not eligible to access loan, you will be required to make full payment to continue with your request</p>                         
+                </div>
+
+            
+        </div>  
+
+      </div>
+
+       <div class="max-w-full  py-6 bg-secondaryColor">
+            <div  class="max-w-5xl mx-auto w-full px-3 md:px-0  text-center  ">
+                <h3 class="text-primaryBlue text-2xl font-semibold text-center mt-4">Click on the button below to get started</h3>
+                <a href="https://app.myzennal.com/portal/register" class="bg-primaryBlue inline-block rounded-xl p-3 w-64 mt-6 mb-6 text-md uppercase text-white">Get a quick loan today</a>  
+            </div>
+       </div>
+
+    
+     <!-- faqs -->
+     <div class="w-full md:max-w-4xl mx-auto py-4 px-2 md:px-0 md:py-8 my-10 bg-white">
+
+        <div class="leading-relaxed">
+            <h3 class="text-primaryBlue text-2xl font-semibold text-center ">Frequently Asked Questions</h3>
+            <p class="text-darkColor mb-3 mt-3 md:mt-4 text-center">Get the answers you need</p>
+        </div>
+
+        <div id="accordion-collapse w-full md:w-3/6 mt-20 md:mx-auto" data-accordion="collapse">
+            
+            <div class="mb-2 shadow-md shadow-lightGray">
+                <h2 id="accordion-collapse-heading-1">
+                    <button type="button" 
+                            class="flex justify-between items-center
+                            px-6 py-3 mt-4  ring-1 ring-lightGray rounded-tr-lg 
+                            p-5 w-full font-medium text-left rounded-tl-lg 
+                            border border-b-0 border-gray-200 focus:ring-1 
+                            focus:ring-lightGray   
+                            hover:bg-gray-100    bg-gray-100   
+                            text-gray-900   "
+                            data-accordion-target="#accordion-collapse-body-1"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-1
+                            ">
+                    <span class="text-primaryBlue font-bold">How much can I borrow from Zennal Quick Loans and for how long?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-1" aria-labelledby="accordion-collapse-heading-1">
+                    <div class="p-2 md:p-5 text-sm border border-b-0 border-gray-200      ">
+                        <p class="mb-2 text-gray-500   ">Our loan size ranges from about ₦5,000 to ₦500,000. Your loan offer is determined primarily by your bank account statement. So, ensure that you have consistent inflow into your account to increase your chances of accessing quick loans. Loan tenors vary per individual and are usually between 1 to 3 months. Returning customers qualify for longer tenors.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2 shadow-md shadow-lightGray">
+                <h2 id="accordion-collapse-heading-2">
+                    <button type="button" 
+                            class="flex justify-between items-center
+                            px-6 py-3 mt-4  ring-1 ring-lightGray rounded-tr-lg 
+                            p-5 w-full font-medium text-left rounded-tl-lg 
+                            border border-b-0 border-gray-200 focus:ring-1 
+                            focus:ring-lightGray   
+                            hover:bg-gray-100    bg-gray-100   
+                            text-gray-900   "
+                            data-accordion-target="#accordion-collapse-body-2"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-2
+                            ">
+                    <span class="text-primaryBlue font-bold">Can I have more than one running loan?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-2" aria-labelledby="accordion-collapse-heading-2">
+                    <div class="p-2 md:p-5 text-sm border border-b-0 border-gray-200      ">
+                        <p class="mb-2 text-gray-500   ">You can only have one quick loan at a time. However, you can access other available Zennal products, provided you qualify</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2 shadow-md shadow-lightGray">
+                <h2 id="accordion-collapse-heading-3">
+                    <button type="button" 
+                            class="flex justify-between items-center
+                            px-6 py-3 mt-4  ring-1 ring-lightGray rounded-tr-lg 
+                            p-5 w-full font-medium text-left rounded-tl-lg 
+                            border border-b-0 border-gray-200 focus:ring-1 
+                            focus:ring-lightGray   
+                            hover:bg-gray-100    bg-gray-100   
+                            text-gray-900   "
+                            data-accordion-target="#accordion-collapse-body-3"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-3
+                            ">
+                    <span class="text-primaryBlue font-bold">Can I get a higher loan amount on my existing loan?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-3" aria-labelledby="accordion-collapse-heading-3">
+                    <div class="p-2 md:p-5 text-sm border border-b-0 border-gray-200      ">
+                        <p class="mb-2 text-gray-500   ">The loan offer accepted at point of application and disbursed cannot be top-up. However, you can access a higher amount on your next application provided you pay back your loan on time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2 shadow-md shadow-lightGray">
+                <h2 id="accordion-collapse-heading-4">
+                    <button type="button" 
+                            class="flex justify-between items-center
+                            px-6 py-3 mt-4  ring-1 ring-lightGray rounded-tr-lg 
+                            p-5 w-full font-medium text-left rounded-tl-lg 
+                            border border-b-0 border-gray-200 focus:ring-1 
+                            focus:ring-lightGray   
+                            hover:bg-gray-100    bg-gray-100   
+                            text-gray-900   "
+                            data-accordion-target="#accordion-collapse-body-4"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-4
+                            ">
+                    <span class="text-primaryBlue font-bold">Are my details shared with a third party company?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-4" aria-labelledby="accordion-collapse-heading-4">
+                    <div class="p-2 md:p-5 text-sm border border-b-0 border-gray-200      ">
+                        <p class="mb-2 text-gray-500   ">We do not share your information with a third party. However, in case of default, we reserve the right to contact your employers, Next of Kin, report you to a credit bureau and involve a third-party collections body in an attempt to collect amount outstanding.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2 shadow-md shadow-lightGray">
+                <h2 id="accordion-collapse-heading-5">
+                    <button type="button" 
+                            class="flex justify-between items-center
+                            px-6 py-3 mt-4  ring-1 ring-lightGray rounded-tr-lg 
+                            p-5 w-full font-medium text-left rounded-tl-lg 
+                            border border-b-0 border-gray-200 focus:ring-1 
+                            focus:ring-lightGray   
+                            hover:bg-gray-100    bg-gray-100   
+                            text-gray-900   "
+                            data-accordion-target="#accordion-collapse-body-5"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-5
+                            ">
+                    <span class="text-primaryBlue font-bold">How do I know the amount to repay?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-5" aria-labelledby="accordion-collapse-heading-5">
+                    <div class="p-2 md:p-5 text-sm border border-b-0 border-gray-200      ">
+                        <p class="mb-2 text-gray-500   ">Once, your loan request is approved, a repayment schedule (your loan amount and interest due) is displayed on your profile for you to accept or reject. Aside this, there are no upfront payments or hidden charges on your loan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2 shadow-md shadow-lightGray">
+                <h2 id="accordion-collapse-heading-6">
+                    <button type="button" 
+                            class="flex justify-between items-center
+                            px-6 py-3 mt-4  ring-1 ring-lightGray rounded-tr-lg 
+                            p-5 w-full font-medium text-left rounded-tl-lg 
+                            border border-b-0 border-gray-200 focus:ring-1 
+                            focus:ring-lightGray   
+                            hover:bg-gray-100    bg-gray-100   
+                            text-gray-900   "
+                            data-accordion-target="#accordion-collapse-body-6"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-6
+                            ">
+                    <span class="text-primaryBlue font-bold">How do I repay my loan?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-6" aria-labelledby="accordion-collapse-heading-6">
+                    <div class="p-2 md:p-5 text-sm border border-b-0 border-gray-200      ">
+                        <p class="mb-2 text-gray-500   ">Amount due is deducted directly from your account on due date of repayment. To achieve this, you have to enable a Direct Debit Mandate as part of your approved loan acceptance procedure</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+      </div>
+
+      
+     <!-- footer 1 -->
+     <footer class="w-full md:max-w-full pt-16 md:pt-24 pb-14 md:pb-10 divide-y divide-gray-200 bg-mainBackground">
+        <div class="w-full md:max-w-5xl font-light text-md text-darkColor mx-auto items-start grid md:grid-cols-4 gap-8 px-4">
+                <div class="md:mr-5">
+                    <a href="index.html">
+                        <img src="images/zennal.png" alt="">
+                    </a>
+                    <p class=" leading-tight text-sm mb-12">
+                        Providing Nigerians a single
+                        channel for all financial services.
+                        Everyone deserves to be served right. 
+                    </p>
+                    <div class="flex space-x-8 md:space-x-6 items-center mb-6 ">
+                        <a href="https://www.facebook.com/Zennal-100700569210063">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.875 0H3.125C1.40156 0 0 1.40156 0 3.125V21.875C0 23.5984 1.40156 25 3.125 25H12.5V16.4062H9.375V12.5H12.5V9.375C12.5 6.78594 14.5984 4.6875 17.1875 4.6875H20.3125V8.59375H18.75C17.8875 8.59375 17.1875 8.5125 17.1875 9.375V12.5H21.0938L19.5312 16.4062H17.1875V25H21.875C23.5984 25 25 23.5984 25 21.875V3.125C25 1.40156 23.5984 0 21.875 0Z" fill="#022B69"/>
+                            </svg>                                
+                        </a>
+
+                        <a href="https://www.instagram.com/zennalng/">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.1875 0H7.8125C3.49844 0 0 3.49844 0 7.8125V17.1875C0 21.5016 3.49844 25 7.8125 25H17.1875C21.5016 25 25 21.5016 25 17.1875V7.8125C25 3.49844 21.5016 0 17.1875 0ZM22.6562 17.1875C22.6562 20.2031 20.2031 22.6562 17.1875 22.6562H7.8125C4.79688 22.6562 2.34375 20.2031 2.34375 17.1875V7.8125C2.34375 4.79688 4.79688 2.34375 7.8125 2.34375H17.1875C20.2031 2.34375 22.6562 4.79688 22.6562 7.8125V17.1875Z" fill="#022B69"/>
+                                <path d="M12.5 6.25C9.04844 6.25 6.25 9.04844 6.25 12.5C6.25 15.9516 9.04844 18.75 12.5 18.75C15.9516 18.75 18.75 15.9516 18.75 12.5C18.75 9.04844 15.9516 6.25 12.5 6.25ZM12.5 16.4062C10.3469 16.4062 8.59375 14.6531 8.59375 12.5C8.59375 10.3453 10.3469 8.59375 12.5 8.59375C14.6531 8.59375 16.4062 10.3453 16.4062 12.5C16.4062 14.6531 14.6531 16.4062 12.5 16.4062Z" fill="#022B69"/>
+                            </svg>                                                            
+                        </a>
+    
+                        <a href="https://twitter.com/MyZennal ">
+                            <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25 2.74844C24.0703 3.15625 23.0797 3.42656 22.0469 3.55781C23.1094 2.92344 23.9203 1.92656 24.3016 0.725C23.3109 1.31562 22.2172 1.73281 21.0516 1.96563C20.1109 0.964063 18.7703 0.34375 17.3078 0.34375C14.4703 0.34375 12.1859 2.64688 12.1859 5.47031C12.1859 5.87656 12.2203 6.26719 12.3047 6.63906C8.04375 6.43125 4.27344 4.38906 1.74062 1.27813C1.29844 2.04531 1.03906 2.92344 1.03906 3.86875C1.03906 5.64375 1.95312 7.21719 3.31562 8.12812C2.49219 8.1125 1.68437 7.87344 1 7.49688C1 7.5125 1 7.53281 1 7.55312C1 10.0437 2.77656 12.1125 5.10625 12.5891C4.68906 12.7031 4.23438 12.7578 3.7625 12.7578C3.43438 12.7578 3.10312 12.7391 2.79219 12.6703C3.45625 14.7 5.34063 16.1922 7.58125 16.2406C5.8375 17.6047 3.62344 18.4266 1.22656 18.4266C0.80625 18.4266 0.403125 18.4078 0 18.3563C2.27031 19.8203 4.96094 20.6562 7.8625 20.6562C17.2937 20.6562 22.45 12.8438 22.45 6.07187C22.45 5.84531 22.4422 5.62656 22.4312 5.40938C23.4484 4.6875 24.3031 3.78594 25 2.74844Z" fill="#022B69"/>
+                            </svg>                             
+                        </a>
+
+    
+                        <a href="#">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.22917 2.20834C4.22889 2.76087 4.00913 3.29067 3.61824 3.68117C3.22734 4.07168 2.69733 4.29091 2.14479 4.29063C1.59226 4.29035 1.06246 4.07059 0.671958 3.6797C0.281452 3.2888 0.062224 2.75879 0.0625003 2.20625C0.0627765 1.65372 0.282535 1.12393 0.673431 0.73342C1.06433 0.342915 1.59434 0.123686 2.14688 0.123963C2.69941 0.124239 3.2292 0.343997 3.61971 0.734893C4.01021 1.12579 4.22944 1.6558 4.22917 2.20834ZM4.29167 5.83334H0.125V18.875H4.29167V5.83334ZM10.875 5.83334H6.72917V18.875H10.8333V12.0313C10.8333 8.21875 15.8021 7.86459 15.8021 12.0313V18.875H19.9167V10.6146C19.9167 4.1875 12.5625 4.42709 10.8333 7.58334L10.875 5.83334Z" fill="#022B69"/>
+                                </svg>
+                                
+                         </a>
+                                  
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4 text-lg ">Quick Links</h3>
+                    <ul class="space-y-3 font-normal">
+                    <li><a href="loans.html">Loan</a></li>
+                    <li><a href="auto_insurance.html">Auto Insurance</a></li>
+                    <li class="mb-5"><a href="vehicle_documentation.html">Vehicle Documentation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4 text-lg ">Other Links</h3>
+                    <ul class="space-y-3 font-normal">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="mb-8 md:mb-0">
+                    <h3 class="font-bold mb-4 text-lg">Legal</h3>
+                    <ul class="space-y-3 font-normal">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Condition</a></li>
+                    </ul>
+                </div>
+        </div>
+        
+    
+        <div class="bg-mainBackground text-darkColor">
+            <p class="text-center font-normal pt-6 pb-2 ring-gray-50">
+                &copy; 2022 Zennal | All Rights Reserved. 
+            </p>
+        </div>
+    
+    </footer>
+
+<script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+</body>
+</html>

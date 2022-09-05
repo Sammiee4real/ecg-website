@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <title>Landing Page</title>
+    <style>
+        .swiper {
+         width: 100%;
+         height: 622px;
+        }
+
+        .shadows-font{
+         /* font-family: 'Shadows Into Light', cursive; */
+         font-family: 'Roboto', sans-serif;
+        }
+
+        /* .bgimg {
+            opacity: 0.2;
+            background-image: url('images/index1.jpg');
+        } */
+
+    </style>
+</head>
+<body class="font-sans">
+
+ <!-- menu -->
+ <nav class="w-full bg-mainBackground text-darkColor border-gray-200 px-2 sm:px-4 py-2.5 rounded ">
+    <div class=" flex flex-wrap max-w-5xl mx-auto py-4 justify-between items-center">
+    
+    <a href="index.html" class="flex items-center">
+    <img src="images/zennal.png" class="mr-3 h-10 sm:h-14" alt="Zennal Logo">
+       
+    </a>
+
+    <div class="flex md:order-2">
+
+    <a href="https://app.myzennal.com/portal/login" class="bg-lightBlue hover:bg-secondaryColor hidden md:block p-2 w-24 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">Login</a>
+
+    <button data-collapse-toggle="mobile-menu-4" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200  " aria-controls="mobile-menu-4" aria-expanded="false">
+    <span class="sr-only">Open main menu</span>
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    </button>
+    </div>
+    
+    <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-4">
+    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+    <li>
+        <a href="index.html" class="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 text-secondaryColor md:p-0 ">Home</a>
+    </li>
+    <li>
+    <a href="loans.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-secondaryColor md:p-0 ">Loans</a>
+    </li>
+     <li>
+    <a href="auto_insurance.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-secondaryColor md:p-0 ">Auto Insurance</a>
+    </li>
+    <li>
+        <a href="vehicle_documentation.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-secondaryColor md:p-0 ">Vehicle Documentation</a>
+    </li>
+    <li>
+        <a href="about.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-secondaryColor md:p-0 ">About Us</a>
+    </li>
+    <li>
+    <a href="contact.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-secondaryColor md:p-0 ">Contact</a>
+    </li>
+    <li>
+      <a href="https://app.myzennal.com/portal/login" class="bg-secondaryColor block md:hidden p-2 w-24 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">Login</a>
+    </li>
+    </ul>
+    </div>
+
+    </div>
+   </nav>
+    
+
+  <!-- Hero section  -->
+     <div class="max-w-full relative md:pt-6 md:pb-16 bg-mainBackground " >
+        <!-- <img src="images/index1.jpg" class="absolute h-full w-full bg-local opacity-25" alt=""> -->
+        <img src="images/index1.jpg" class="absolute h-full w-full bg-local opacity-25" alt="">
+        <div class="grid md:grid-cols-2 md:gap-6 justify-between items-start md:max-w-5xl md:mx-auto w-full px-4 md:px-0" >
+               <div class="space-y-16 py-10 md:py-14 mt-0 md:mt-8 " >
+                        <div class="" >
+                            <!-- <img class=" absolute z-10" src="images/index1.jpg" alt=""> -->
+
+                            <h2 class="text-primaryBlue z-20 text-4xl font-bold md:font-extrabold text-left leading-normal">Make Easier Your Financial Services With Zennal</h2>
+                            <p class="mt-4 text-sm">Registering and renewing your new vehicle is so easy and achievable with us.</p>
+                        </div>
+                   <div>
+                    <div>
+                            <a href="https://app.myzennal.com/portal/register" class="bg-secondaryColor absolute z-30 text-center inline mr-3 rounded-xl p-3 w-36 mt-20 text-sm">Get Started</a>  
+                            <!-- <span class="flex justify-between items-center">
+                                <svg width="34" height="8" viewBox="0 0 34 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M33.3536 4.35355C33.5488 4.15829 33.5488 3.84171 33.3536 3.64645L30.1716 0.464466C29.9763 0.269204 29.6597 0.269204 29.4645 0.464466C29.2692 0.659728 29.2692 0.976311 29.4645 1.17157L32.2929 4L29.4645 6.82843C29.2692 7.02369 29.2692 7.34027 29.4645 7.53553C29.6597 7.7308 29.9763 7.7308 30.1716 7.53553L33.3536 4.35355ZM0 4.5H33V3.5H0V4.5Z" fill="black"/>
+                                </svg>
+                                <span class="ml-2"> Learn more</span>
+                               
+                            </span> -->
+                    </div>
+                        
+                               
+                       <div class="flex justify-start items-center mt-8 space-x-4">
+                            <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM9.003 14L16.073 6.929L14.659 5.515L9.003 11.172L6.174 8.343L4.76 9.757L9.003 14Z" fill="#022B69"/>
+                            </svg>
+                            <p> Free Registration</p>                
+                    
+                            <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM9.003 14L16.073 6.929L14.659 5.515L9.003 11.172L6.174 8.343L4.76 9.757L9.003 14Z" fill="#022B69"/>
+                            </svg>
+                            <p>Great Service</p>  
+
+                       </div>
+
+                       <div class="flex justify-start items-center mt-16 space-x-4 ">
+                            <!-- <svg width="27" height="27" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="18.5" cy="18.5" r="18" stroke="#022B69"/>
+                            <path d="M17.4745 18.5L21.8057 22.8313L20.5685 24.0685L15 18.5L20.5685 12.9315L21.8057 14.1688L17.4745 18.5Z" fill="#022B69"/>
+                            </svg>
+
+                            <svg width="27" height="27" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="18.5" cy="18.5" r="18" stroke="#022B69"/>
+                            <path d="M19.5255 18.5L15.1943 22.8313L16.4315 24.0685L22 18.5L16.4315 12.9315L15.1943 14.1688L19.5255 18.5Z" fill="#022B69"/>
+                            </svg> -->
+
+                           
+                                <div class="swiper-pagination"></div>
+                                
+                       </div>
+                                
+                   </div>
+               </div>
+
+                <div class="bg-secondaryColor hidden md:block md:relative h-126 justify-self-end mt-6 rounded-3xl w-4/5">
+                     <!-- <img src="hero.png" class="h-full w-full md:absolute top-5 right-5" alt=""> -->
+                    
+                     <div class="rounded-lg h-full w-full md:absolute top-6 right-5">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper rounded-lg">
+                        <!-- Slides -->
+                        <!-- <div class="swiper-slide"><img src="hero.png" alt=""></div> -->
+                        <div class="swiper-slide">
+                            <a href="loans.html"> 
+                            <img src="images/hero.png" alt="">
+                             <p  class="my-3 shadows-font font-bold uppercase text-lg text-center tracking-tight font-shadows text-primaryBlue"><a href="loans.html"><strong>Zennal got you covered</strong></a></p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="loans.html"> 
+                            <img src="images/loanhero.png" alt="">
+                             <p  class="my-3 shadows-font font-bold uppercase text-lg text-center tracking-tight font-shadows text-primaryBlue"><a href="loans.html"><strong>Get a loan today</strong></a></p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="auto_insurance.html">
+                                <img src="images/insurancehero.png" alt="">
+                                <p  class="my-3 shadows-font uppercase text-lg text-center font-normal tracking-tight text-primaryBlue"> <a href="auto_insurance.html"><strong>Get auto insurance</strong></a> </p>   
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="vehicle_documentation.html">
+                                <img src="images/serviceshero.png" alt="">
+                                <p  class="my-3 shadows-font uppercase font-shadows text-lg text-center font-normal tracking-tight  text-primaryBlue"> <a href="vehicle_documentation.html"><strong>Register your vehicle</strong></a> </p>
+                         
+                            </a>
+                        </div>
+                        <!-- If we need pagination -->
+                        <!-- <div class="swiper-pagination"></div> -->
+        
+                        <!-- If we need navigation buttons -->
+                        <!-- <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div> -->
+        
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+
+                        </div>
+                     </div>
+
+                </div>
+                
+        </div>
+</div>
+
+</div>
+
+<div class="w-full px-2 md:px-4 md:my-5  md:py-3 bg-white z-600 ">
+    <!-- <div  class="max-w-5xl mx-auto  "> -->
+            <div class="swiperHero mySwiperHero overflow-x-scroll ">
+                <div class="swiper-wrapper px-5  bg-white text-lightGray py-5">
+                  <div class="swiper-slide">
+                    <img class=" sm:rounded-3xl  sm:w-40 h-20 sm:h-32" src="images/hero.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class=" sm:rounded-3xl sm:w-40 h-20 sm:h-32" src="images/loanhero.png" alt="">
+
+                  </div>
+                  <div class="swiper-slide">
+                    <img class=" sm:rounded-3xl  sm:w-40 h-20 sm:h-32" src="images/insurancehero.png" alt="">
+
+                  </div>    
+                  <!-- <div class="swiper-slide">
+                    <img class=" rounded-3xl w-60 h-20 sm:h-52" src="images/registervehicle.png" alt="">
+
+                  </div>  -->
+                  <div class="swiper-slide">
+                    <img class=" sm:rounded-3xl   sm:w-40 h-20 sm:h-32" src="images/hero.png" alt="">
+
+                  </div> 
+                  <div class="swiper-slide">
+                    <img class=" sm:rounded-3xl  sm:w-40 h-20 sm:h-32" src="images/loanhero.png" alt="">
+
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img class=" sm:rounded-3xl   sm:w-40 h-20 sm:h-32" src="images/hero.png" alt="">
+
+                  </div> 
+                  <div class="swiper-slide">
+                    <img class=" sm:rounded-3xl  sm:w-40 h-20 sm:h-32" src="images/loanhero.png" alt="">
+
+                  </div>
+                
+                 </div>
+
+                <div class="swiper-pagination-hero flex justify-center items-center"></div>
+                <div class="swiper-pagination-button-prev"></div>
+                <div class="swiper-pagination-button-next"></div>
+
+            </div>
+    </div>                                
+  <!-- </div> -->
+ </div>
+
+    <!-- //financial services section -->
+    <div class="max-w-full my-7 md:my-12  px-3 md:px-0 py-5 bg-white">
+        <h3 class="text-primaryBlue text-3xl md:text-2xl font-semibold text-center ">Zennal, Your Financial Services Provider.</h3>
+        <p class="text-center mb-9 text-darkColor">Fast, Affordable, Reliable.</p>
+        <div class="grid md:grid-cols-3 md:max-w-5xl md:mx-auto gap-3 md:gap-10 mt-12 md:mt-6 text-lightGray">
+              <div class="text-center shadow-lg shadow-lightBlue p-3">
+                <svg class="mx-auto mb-6" width="70" height="70"  viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="90" height="90" rx="10" fill="#00DBC5"/>
+                    <path d="M41.4584 51.7083H43.875V52.3333C43.875 52.6944 43.9931 52.993 44.2292 53.2291C44.4653 53.4652 44.7639 53.5833 45.125 53.5833C45.4862 53.5833 45.7848 53.4652 46.0209 53.2291C46.257 52.993 46.375 52.6944 46.375 52.3333V51.7083H48.375C48.7917 51.7083 49.132 51.5416 49.3959 51.2083C49.6598 50.875 49.7917 50.5 49.7917 50.0833V45.2916C49.7917 44.8472 49.6598 44.4652 49.3959 44.1458C49.132 43.8263 48.7917 43.6666 48.375 43.6666H42.7084V40.7916H48.5417C48.9028 40.7916 49.2014 40.6736 49.4375 40.4375C49.6737 40.2013 49.7917 39.9027 49.7917 39.5416C49.7917 39.1805 49.6737 38.8819 49.4375 38.6458C49.2014 38.4097 48.9028 38.2916 48.5417 38.2916H46.375V37.6666C46.375 37.3055 46.257 37.0069 46.0209 36.7708C45.7848 36.5347 45.4862 36.4166 45.125 36.4166C44.7639 36.4166 44.4653 36.5347 44.2292 36.7708C43.9931 37.0069 43.875 37.3055 43.875 37.6666V38.2916H41.8334C41.4167 38.2916 41.0417 38.4583 40.7084 38.7916C40.375 39.125 40.2084 39.5138 40.2084 39.9583V44.7083C40.2084 45.1527 40.375 45.5069 40.7084 45.7708C41.0417 46.0347 41.4167 46.1666 41.8334 46.1666H47.2917V49.2083H41.4584C41.0973 49.2083 40.7987 49.3263 40.5625 49.5625C40.3264 49.7986 40.2084 50.0972 40.2084 50.4583C40.2084 50.8194 40.3264 51.118 40.5625 51.3541C40.7987 51.5902 41.0973 51.7083 41.4584 51.7083ZM30.8334 58.3333C30.1667 58.3333 29.5834 58.0833 29.0834 57.5833C28.5834 57.0833 28.3334 56.5 28.3334 55.8333V34.1666C28.3334 33.5 28.5834 32.9166 29.0834 32.4166C29.5834 31.9166 30.1667 31.6666 30.8334 31.6666H59.1667C59.8612 31.6666 60.4514 31.9166 60.9375 32.4166C61.4237 32.9166 61.6667 33.5 61.6667 34.1666V55.8333C61.6667 56.5 61.4237 57.0833 60.9375 57.5833C60.4514 58.0833 59.8612 58.3333 59.1667 58.3333H30.8334Z" fill="#011627"/>
+                    </svg>
+                    <h4 class="font-bold text-darkColor leading-loose">Quick Loans</h4>    
+                    <ul class="text-left text-sm text-lightGray">
+                        <li>
+                            Easily access instant credit through Zennal Quick Loans. No guarantors, collaterals, only limited information required.
+                        </li>
+                        <li>
+                            Apply and receive funds directly in your bank account. You qualify to access higher amounts and at reduced interest rates.
+                            <!-- with early repayment -->
+                            <!-- hen you repay your loans on time -->
+                        </li>
+                    </ul>   
+                    <button class="bg-secondaryColor text-primaryBlue rounded-xl p-2 w-24 mt-12 text-sm"><a href="loans.html">Learn More</a></button>            
+               </div>
+               <div class="text-center shadow-lg shadow-lightBlue p-3">
+                <svg class="mx-auto mb-6" width="70" height="70" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="90" height="90" rx="10" fill="#00DBC5"/>
+                    <path d="M55.375 42.5833C53.1806 42.5833 51.3056 41.8055 49.75 40.25C48.1944 38.6944 47.4167 36.8194 47.4167 34.625C47.4167 32.4305 48.1944 30.5555 49.75 29C51.3056 27.4444 53.1806 26.6666 55.375 26.6666C57.5972 26.6666 59.4792 27.4375 61.0208 28.9791C62.5625 30.5208 63.3333 32.4027 63.3333 34.625C63.3333 36.8472 62.5556 38.7291 61 40.2708C59.4444 41.8125 57.5694 42.5833 55.375 42.5833ZM54.75 35.1666C54.75 35.3888 54.8194 35.5625 54.9583 35.6875C55.0972 35.8125 55.2778 35.875 55.5 35.875C55.7222 35.875 55.8958 35.8055 56.0208 35.6666C56.1458 35.5277 56.2083 35.3472 56.2083 35.125V30.625C56.2083 30.4027 56.1389 30.2291 56 30.1041C55.8611 29.9791 55.6806 29.9166 55.4583 29.9166C55.2361 29.9166 55.0625 29.9791 54.9375 30.1041C54.8125 30.2291 54.75 30.4027 54.75 30.625V35.1666ZM55.5 39.4166C55.75 39.4166 55.9653 39.3333 56.1458 39.1666C56.3264 39 56.4167 38.7777 56.4167 38.5C56.4167 38.2222 56.3264 38 56.1458 37.8333C55.9653 37.6666 55.75 37.5833 55.5 37.5833C55.1944 37.6111 54.9653 37.7083 54.8125 37.875C54.6597 38.0416 54.5833 38.25 54.5833 38.5C54.5833 38.7777 54.6667 39 54.8333 39.1666C55 39.3333 55.2222 39.4166 55.5 39.4166ZM36.9167 50.25C37.5556 50.25 38.0903 50.0347 38.5208 49.6041C38.9514 49.1736 39.1667 48.6388 39.1667 48C39.1667 47.3611 38.9514 46.8125 38.5208 46.3541C38.0903 45.8958 37.5556 45.6666 36.9167 45.6666C36.2778 45.6666 35.7292 45.8958 35.2708 46.3541C34.8125 46.8125 34.5833 47.3611 34.5833 48C34.5833 48.6388 34.8125 49.1736 35.2708 49.6041C35.7292 50.0347 36.2778 50.25 36.9167 50.25ZM31.25 58.3333C30.8889 58.3333 30.5903 58.2152 30.3542 57.9791C30.1181 57.743 30 57.4444 30 57.0833V43.5833L33.5417 32.9166C33.6806 32.5277 33.9097 32.2222 34.2292 32C34.5486 31.7777 34.9167 31.6666 35.3333 31.6666H44.2083C44.0972 32.0555 44.0139 32.4583 43.9583 32.875C43.9028 33.2916 43.8611 33.7222 43.8333 34.1666H35.75L33.4583 41.0833H45.8333C46.6389 42.25 47.5972 43.2361 48.7083 44.0416C49.8194 44.8472 51.0556 45.4305 52.4167 45.7916C51.9444 45.9305 51.5694 46.2013 51.2917 46.6041C51.0139 47.0069 50.875 47.4722 50.875 48C50.875 48.6388 51.0903 49.1736 51.5208 49.6041C51.9514 50.0347 52.4861 50.25 53.125 50.25C53.7639 50.25 54.3125 50.0347 54.7708 49.6041C55.2292 49.1736 55.4583 48.6388 55.4583 48C55.4583 47.6111 55.3819 47.2638 55.2292 46.9583C55.0764 46.6527 54.8472 46.3888 54.5417 46.1666C55.4861 46.1666 56.4167 46.1041 57.3333 45.9791C58.25 45.8541 59.1389 45.5972 60 45.2083V57.0833C60 57.4444 59.8819 57.743 59.6458 57.9791C59.4097 58.2152 59.1111 58.3333 58.75 58.3333H57.875C57.5139 58.3333 57.2222 58.2152 57 57.9791C56.7778 57.743 56.6667 57.4444 56.6667 57.0833V54.8333H33.3333V57.0833C33.3333 57.4444 33.2153 57.743 32.9792 57.9791C32.7431 58.2152 32.4444 58.3333 32.0833 58.3333H31.25Z" fill="#011627"/>
+                    </svg>
+                    
+                    <h4 class="font-bold leading-loose text-darkColor">Auto Insurance</h4>    
+                    
+                        <ul class="text-left text-sm text-gray-700">
+                            <li>
+                                Be financially secured in the event of any of these unforeseen circumstances.
+                                
+                               
+                            </li>
+                            <li>
+                                No more stress if your vehicle get bashed, vandalized, involved in an accident or stolen and you are worried about repairs or replacement.
+                            </li>
+                            <li>
+                                The all new way to insure your vehicle.
+                            </li>
+                        </ul>                
+                   
+                    <button class="bg-secondaryColor text-primaryBlue rounded-xl p-2 w-24 mt-8 text-sm"><a href="auto_insurance.html">Learn More</a><button>              
+               </div>
+               <div class="text-center shadow-lg shadow-lightBlue p-3">
+                   <a href="#" class="hover:shadow-3xl hover:shadow-lightBlue ">
+                    <svg class="mx-auto mb-6" width="70" height="70" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="90" height="90" rx="10" fill="#00DBC5"/>
+                        <path d="M37.9167 53.3333H46.7917C47.1528 53.3333 47.4514 53.2152 47.6875 52.9791C47.9236 52.743 48.0417 52.4444 48.0417 52.0833C48.0417 51.7222 47.9236 51.4236 47.6875 51.1875C47.4514 50.9513 47.1528 50.8333 46.7917 50.8333H37.9167C37.5556 50.8333 37.2569 50.9513 37.0208 51.1875C36.7847 51.4236 36.6667 51.7222 36.6667 52.0833C36.6667 52.4444 36.7847 52.743 37.0208 52.9791C37.2569 53.2152 37.5556 53.3333 37.9167 53.3333ZM37.9167 46.25H52.0833C52.4444 46.25 52.7431 46.1319 52.9792 45.8958C53.2153 45.6597 53.3333 45.3611 53.3333 45C53.3333 44.6388 53.2153 44.3402 52.9792 44.1041C52.7431 43.868 52.4444 43.75 52.0833 43.75H37.9167C37.5556 43.75 37.2569 43.868 37.0208 44.1041C36.7847 44.3402 36.6667 44.6388 36.6667 45C36.6667 45.3611 36.7847 45.6597 37.0208 45.8958C37.2569 46.1319 37.5556 46.25 37.9167 46.25ZM37.9167 39.1666H52.0833C52.4444 39.1666 52.7431 39.0486 52.9792 38.8125C53.2153 38.5763 53.3333 38.2777 53.3333 37.9166C53.3333 37.5555 53.2153 37.2569 52.9792 37.0208C52.7431 36.7847 52.4444 36.6666 52.0833 36.6666H37.9167C37.5556 36.6666 37.2569 36.7847 37.0208 37.0208C36.7847 37.2569 36.6667 37.5555 36.6667 37.9166C36.6667 38.2777 36.7847 38.5763 37.0208 38.8125C37.2569 39.0486 37.5556 39.1666 37.9167 39.1666ZM32.5 60C31.8056 60 31.2153 59.7569 30.7292 59.2708C30.2431 58.7847 30 58.1944 30 57.5V32.5C30 31.8055 30.2431 31.2152 30.7292 30.7291C31.2153 30.243 31.8056 30 32.5 30H40.3333C40.7222 29.0277 41.3403 28.2291 42.1875 27.6041C43.0347 26.9791 43.9861 26.6666 45.0417 26.6666C46.0972 26.6666 47.0347 26.9791 47.8542 27.6041C48.6736 28.2291 49.2917 29.0277 49.7083 30H57.5C58.1944 30 58.7847 30.243 59.2708 30.7291C59.7569 31.2152 60 31.8055 60 32.5V57.5C60 58.1944 59.7569 58.7847 59.2708 59.2708C58.7847 59.7569 58.1944 60 57.5 60H32.5ZM45 31.875C45.3889 31.875 45.7292 31.7291 46.0208 31.4375C46.3125 31.1458 46.4583 30.8055 46.4583 30.4166C46.4583 30.0277 46.3125 29.6875 46.0208 29.3958C45.7292 29.1041 45.3889 28.9583 45 28.9583C44.6111 28.9583 44.2708 29.1041 43.9792 29.3958C43.6875 29.6875 43.5417 30.0277 43.5417 30.4166C43.5417 30.8055 43.6875 31.1458 43.9792 31.4375C44.2708 31.7291 44.6111 31.875 45 31.875Z" fill="#011627"/>
+                        </svg>
+                        
+                        <h4 class="font-bold leading-loose text-darkColor">Vehicle Documentation</h4>    
+                        <ul class="text-left text-sm text-gray-700">
+                            <li>
+                                Registering your new vehicle and renewing your vehicle documents can be so simple and easy to achieve!                   
+    
+                            </li>
+                            <li>
+                                We provide you the opportunity of doing so from the comfort of your home or office, with your documentations delivered to your doorstep.
+                            </li>
+                            <!-- <li>
+                                With much ease and convenience, you can register and renew your vehicle documents through Zennal.
+                            </li> -->
+                        </ul>    
+                        <button class="bg-secondaryColor text-primaryBlue rounded-xl p-2 w-24 mt-8 text-sm"><a href="vehicle_documentation.html">Learn More</a><button>              
+                 
+                   </a>
+              </div>
+        </div>
+    </div>
+
+
+    <!-- partners -->
+    <div class="w-full mb-10 py-5 bg-mainBackground">
+       <div  class="w-full max-w-5xl mx-auto  ">
+        <p class="text-darkColor text-center">Our Partners</p>
+        <div class="flex justify-between items-start space-x-10 my-10 overflow-x-scroll">
+          
+                <img src="images/auto-reg.png" alt="">
+              
+           
+                    <svg width="267" height="40" viewBox="0 0 267 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M129.525 0.00760957C126.496 -0.0423348 123.543 0.964802 121.176 2.85584C118.68 4.92159 116.949 7.76535 116.26 10.9316C115.74 3.64895 112.228 0.00760957 105.726 0.00760957C102.802 -0.0600735 99.9507 0.922902 97.6896 2.77813C95.368 4.76522 93.776 7.46993 93.1651 10.464V9.91748C93.1914 7.77373 92.8731 5.63966 92.2227 3.59677C92.0036 2.68244 91.6896 1.7934 91.2862 0.944026H83.4049V38.7869H93.3207V18.3407C93.3725 14.9074 94.1527 12.2543 95.6611 10.3815C96.3956 9.46195 97.3365 8.72841 98.4076 8.24035C99.4785 7.75228 100.649 7.52339 101.825 7.57224C103.802 7.57142 105.193 8.05277 106 9.0163C106.806 9.9799 107.209 11.5795 107.209 13.8152V38.7869H117.119V18.3466C117.171 14.9134 117.938 12.2603 119.421 10.3874C120.158 9.46081 121.105 8.72279 122.183 8.2343C123.262 7.74582 124.441 7.52088 125.624 7.57806C127.6 7.57726 128.992 8.05866 129.798 9.02226C130.605 9.98575 131.008 11.5853 131.008 13.821V38.7929H140.918V13.3499C140.921 8.92793 139.906 5.59873 137.874 3.36228C135.842 1.12584 133.059 0.00760957 129.525 0.00760957Z" fill="black"/>
+                        <path d="M164.654 0.0130048C159.036 0.00985403 154.472 1.73743 150.961 5.19573C147.45 8.6542 145.694 13.349 145.694 19.2802V19.4356C145.698 26.094 147.52 31.1269 151.161 34.5342C154.9 37.8271 159.71 39.6442 164.692 39.6451C169.674 39.6462 174.486 37.8313 178.226 34.54C181.867 31.1335 183.688 26.0746 183.688 19.3637V19.2083C183.691 13.2778 181.924 8.59602 178.388 5.16285C174.851 1.72958 170.273 0.0129644 164.654 0.0130048ZM173.632 20.5264C173.631 28.9531 170.64 33.1664 164.659 33.1664V33.1691C158.725 33.1691 155.76 28.9555 155.764 20.5288V17.7194C155.765 14.1825 156.558 11.4517 158.144 9.52702C158.932 8.57429 159.931 7.81762 161.062 7.31662C162.192 6.81562 163.424 6.58398 164.659 6.63993C165.9 6.5852 167.137 6.8172 168.274 7.31789C169.41 7.8186 170.416 8.57453 171.214 9.52702C172.826 11.4548 173.632 14.1856 173.632 17.7194V20.5264Z" fill="black"/>
+                        <path d="M211.725 0.00702379C208.592 -0.09484 205.524 0.914005 203.063 2.85524C200.663 4.85384 199.036 7.62684 198.46 10.6966V9.91689C198.49 7.77333 198.174 5.639 197.524 3.5962C197.302 2.68164 196.987 1.7926 196.581 0.943442H188.689V38.7864H198.613V18.346C198.612 14.9646 199.458 12.3245 201.149 10.4257C201.971 9.4938 202.988 8.75516 204.128 8.26273C205.269 7.77031 206.504 7.53631 207.746 7.57751C211.958 7.57751 214.065 9.65851 214.065 13.8205V38.7922H223.898V13.3493C223.898 8.92733 222.833 5.59813 220.698 3.36171C218.564 1.12525 215.572 0.00702379 211.725 0.00702379Z" fill="black"/>
+                        <path d="M261.36 5.16282C257.822 1.72957 253.247 0.0129644 247.629 0.0130048C242.009 0.00985403 237.444 1.73743 233.933 5.19573C230.422 8.6542 228.667 13.349 228.667 19.2802V19.4356C228.667 26.094 230.489 31.1269 234.129 34.5342C237.871 37.828 242.682 39.6451 247.667 39.6451C252.651 39.6451 257.464 37.828 261.204 34.5342C264.847 31.1275 266.667 26.0689 266.667 19.3579V19.2024C266.667 13.2758 264.898 8.59598 261.36 5.16282ZM256.602 20.5264C256.6 28.9531 253.609 33.1664 247.629 33.1664V33.1691C241.698 33.1691 238.733 28.9555 238.733 20.5288V17.7194C238.736 14.1825 239.529 11.4517 241.113 9.52702C241.902 8.57416 242.9 7.8174 244.031 7.3164C245.162 6.81538 246.393 6.5838 247.629 6.63993C248.869 6.58547 250.107 6.81758 251.242 7.31827C252.38 7.81893 253.384 8.57473 254.182 9.52702C255.796 11.4548 256.602 14.1856 256.602 17.7194V20.5264Z" fill="black"/>
+                        <path d="M49.5076 0.271442C49.3022 0.121819 49.0596 0.0319787 48.8062 0.0118803C48.5529 -0.00821799 48.2991 0.0422109 48.0727 0.157576C47.8464 0.272942 47.6564 0.448735 47.524 0.665468C47.3913 0.882204 47.3213 1.13141 47.3218 1.38546V16.0227L25.8467 0.271442C25.6413 0.121819 25.3984 0.0319787 25.1453 0.0118803C24.892 -0.00821799 24.6382 0.0422109 24.4118 0.157576C24.1856 0.272942 23.9956 0.448735 23.8629 0.665468C23.7304 0.882204 23.6604 1.13141 23.6609 1.38546V16.0227L2.18572 0.271442C1.9804 0.121818 1.73765 0.0319775 1.4844 0.0118799C1.23114 -0.00821768 0.977264 0.0422126 0.750918 0.15758C0.524569 0.272946 0.334593 0.448744 0.202049 0.665479C0.0695047 0.882217 -0.000428776 1.13143 1.97795e-06 1.38548V22.0674C0.000792804 22.2837 0.0524664 22.4971 0.15085 22.6897C0.249233 22.8824 0.391569 23.0493 0.56636 23.1771L22.6582 39.3806C22.8636 39.5302 23.1062 39.62 23.3596 39.6402C23.6127 39.6602 23.8667 39.6097 24.0929 39.4944C24.3193 39.3791 24.5093 39.2033 24.6418 38.9866C24.7744 38.7697 24.8442 38.5206 24.8438 38.2666V23.6293L46.3191 39.3806C46.5244 39.5304 46.7671 39.6202 47.0202 39.6404C47.2736 39.6604 47.5273 39.61 47.7538 39.4946C47.98 39.3793 48.17 39.2035 48.3024 38.9866C48.4349 38.77 48.5044 38.5206 48.504 38.2666V23.6286L69.9836 39.3806C70.1887 39.5304 70.4313 39.6202 70.6847 39.6404C70.938 39.6604 71.1918 39.61 71.418 39.4946C71.6444 39.3793 71.8342 39.2035 71.9667 38.9866C72.0991 38.77 72.1689 38.5206 72.1682 38.2666V17.5873C72.1676 17.3703 72.1156 17.1565 72.0167 16.9632C71.9178 16.77 71.7749 16.6027 71.5993 16.475L49.5076 0.271442Z" fill="black"/>
+                        </svg>                        
+           
+       
+                <img src="images/remitta.png" alt="">        
+          
+                <img src="images/paystack.png" alt="">        
+          
+                <img src="images/yoa.png" alt="">        
+           
+
+        </div>
+       </div>
+    </div>
+
+
+    <!-- testimony -->
+    <div class="max-w-6xl md:my-10 md:mx-14 md:py-5 bg-white ">
+        <div  class="max-w-5xl mx-auto  ">
+            <h3 class="text-primaryBlue text-2xl font-semibold text-center ">Listen to what our users are saying about us</h3>
+            <p class="text-center mb-9 text-darkColor">Testimonials</p>
+            <!-- <div class="grid md:grid-cols-3 gap-10 bg-white text-lightGray p-5 "> -->
+
+                <div class="swiperTestimonial mySwiperTestimonial overflow-x-scroll">
+                    <div class="swiper-wrapper grid  md:grid-cols-3 gap-3 md:gap-3 bg-white text-lightGray p-5">
+                      <div class="swiper-slide">
+                        <div class="bg-normalBlue rounded-2xl p-6">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis viverra sapien ac nibh nunc aenean egestas. Sodales id et elit sit nec diam vitae a ac. Est donec egestas tellus arcu ut interdum nibh id a. Vulputate pretium hac tellus at. Phasellus consectetur aliquam turpis sed maecenas rutrum ullamcorper.”</p>
+                            <div class="flex items-center space-x-2 mt-5 ">
+                            <img src="images/ellipse.png" alt="">
+                            <div>
+                            <p class="text-gray-900 font-bold text-sm">Andrew Levine</p>
+                            <p class="text-gray-600 text-sm">Manager Railway Station</p>
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="bg-normalBlue rounded-2xl p-6">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis viverra sapien ac nibh nunc aenean egestas. Sodales id et elit sit nec diam vitae a ac. Est donec egestas tellus arcu ut interdum nibh id a. Vulputate pretium hac tellus at. Phasellus consectetur aliquam turpis sed maecenas rutrum ullamcorper.”</p>
+                            <div class="flex items-center space-x-2 mt-5 ">
+                            <img src="images/ellipse.png" alt="">
+                            <div>
+                            <p class="text-gray-900 font-bold text-sm">Andrew Levine</p>
+                            <p class="text-gray-600 text-sm">Manager Railway Station</p>
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="bg-normalBlue rounded-2xl p-6">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis viverra sapien ac nibh nunc aenean egestas. Sodales id et elit sit nec diam vitae a ac. Est donec egestas tellus arcu ut interdum nibh id a. Vulputate pretium hac tellus at. Phasellus consectetur aliquam turpis sed maecenas rutrum ullamcorper.”</p>
+                            <div class="flex items-center space-x-2 mt-5 ">
+                            <img src="images/ellipse.png" alt="">
+                            <div>
+                            <p class="text-gray-900 font-bold text-sm">Andrew Levine</p>
+                            <p class="text-gray-600 text-sm">Manager Railway Station</p>
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="bg-normalBlue rounded-2xl p-6">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis viverra sapien ac nibh nunc aenean egestas. Sodales id et elit sit nec diam vitae a ac. Est donec egestas tellus arcu ut interdum nibh id a. Vulputate pretium hac tellus at. Phasellus consectetur aliquam turpis sed maecenas rutrum ullamcorper.”</p>
+                            <div class="flex items-center space-x-2 mt-5 ">
+                            <img src="images/ellipse.png" alt="">
+                            <div>
+                            <p class="text-gray-900 font-bold text-sm">Andrew Levine</p>
+                            <p class="text-gray-600 text-sm">Manager Railway Station</p>
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                      </div>
+
+                      <div class="swiper-pagination-testimonial flex justify-center items-center"></div>
+                       <div class="swiper-pagination-button-prev"></div>
+                        <div class="swiper-pagination-button-next"></div>
+
+                      
+                      
+                </div>
+        </div>                                
+      </div>
+     </div>
+
+
+
+     <!-- digital service call to action -->
+     <div class="max-w-full mt-8 py-6 bg-secondaryColor">
+        <div  class="max-w-5xl mx-auto w-full px-3 md:px-0  text-center  ">
+            <h3 class="text-primaryBlue text-2xl font-semibold text-center mt-4">A digital service made just for you</h3>
+            <p class="text-center mt-4 md:mt-2 md:w-3/5 mx-auto">Open a new Zennal bank account from your phone or computer and register for an account in minutes.</p>
+            <button class="bg-primaryBlue rounded-xl p-2 w-24 mt-6 mb-6 text-sm text-white"><a href="https://app.myzennal.com/portal/register.php">Sign Up</a></button>  
+        </div>
+    </div>
+
+     <!-- footer 1 -->
+     <footer class="w-full md:max-w-full pt-16 md:pt-24 pb-14 md:pb-10 divide-y divide-gray-200 bg-mainBackground">
+        <div class="w-full md:max-w-5xl font-light text-md text-darkColor mx-auto items-start grid md:grid-cols-4 gap-8 px-4">
+                <div class="md:mr-5">
+                    <a href="index.html">
+                        <img src="images/zennal.png" alt="">
+                    </a>
+                    <p class=" leading-tight text-sm mb-12">
+                        Providing Nigerians a single
+                        channel for all financial services.
+                        Everyone deserves to be served right. 
+                    </p>
+                    <div class="flex space-x-8 md:space-x-6 items-center mb-6 ">
+                        <a href="https://www.facebook.com/Zennal-100700569210063">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.875 0H3.125C1.40156 0 0 1.40156 0 3.125V21.875C0 23.5984 1.40156 25 3.125 25H12.5V16.4062H9.375V12.5H12.5V9.375C12.5 6.78594 14.5984 4.6875 17.1875 4.6875H20.3125V8.59375H18.75C17.8875 8.59375 17.1875 8.5125 17.1875 9.375V12.5H21.0938L19.5312 16.4062H17.1875V25H21.875C23.5984 25 25 23.5984 25 21.875V3.125C25 1.40156 23.5984 0 21.875 0Z" fill="#022B69"/>
+                            </svg>                                
+                        </a>
+
+                        <a href="https://www.instagram.com/zennalng/">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.1875 0H7.8125C3.49844 0 0 3.49844 0 7.8125V17.1875C0 21.5016 3.49844 25 7.8125 25H17.1875C21.5016 25 25 21.5016 25 17.1875V7.8125C25 3.49844 21.5016 0 17.1875 0ZM22.6562 17.1875C22.6562 20.2031 20.2031 22.6562 17.1875 22.6562H7.8125C4.79688 22.6562 2.34375 20.2031 2.34375 17.1875V7.8125C2.34375 4.79688 4.79688 2.34375 7.8125 2.34375H17.1875C20.2031 2.34375 22.6562 4.79688 22.6562 7.8125V17.1875Z" fill="#022B69"/>
+                                <path d="M12.5 6.25C9.04844 6.25 6.25 9.04844 6.25 12.5C6.25 15.9516 9.04844 18.75 12.5 18.75C15.9516 18.75 18.75 15.9516 18.75 12.5C18.75 9.04844 15.9516 6.25 12.5 6.25ZM12.5 16.4062C10.3469 16.4062 8.59375 14.6531 8.59375 12.5C8.59375 10.3453 10.3469 8.59375 12.5 8.59375C14.6531 8.59375 16.4062 10.3453 16.4062 12.5C16.4062 14.6531 14.6531 16.4062 12.5 16.4062Z" fill="#022B69"/>
+                            </svg>                                                            
+                        </a>
+    
+                        <a href="https://twitter.com/MyZennal ">
+                            <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25 2.74844C24.0703 3.15625 23.0797 3.42656 22.0469 3.55781C23.1094 2.92344 23.9203 1.92656 24.3016 0.725C23.3109 1.31562 22.2172 1.73281 21.0516 1.96563C20.1109 0.964063 18.7703 0.34375 17.3078 0.34375C14.4703 0.34375 12.1859 2.64688 12.1859 5.47031C12.1859 5.87656 12.2203 6.26719 12.3047 6.63906C8.04375 6.43125 4.27344 4.38906 1.74062 1.27813C1.29844 2.04531 1.03906 2.92344 1.03906 3.86875C1.03906 5.64375 1.95312 7.21719 3.31562 8.12812C2.49219 8.1125 1.68437 7.87344 1 7.49688C1 7.5125 1 7.53281 1 7.55312C1 10.0437 2.77656 12.1125 5.10625 12.5891C4.68906 12.7031 4.23438 12.7578 3.7625 12.7578C3.43438 12.7578 3.10312 12.7391 2.79219 12.6703C3.45625 14.7 5.34063 16.1922 7.58125 16.2406C5.8375 17.6047 3.62344 18.4266 1.22656 18.4266C0.80625 18.4266 0.403125 18.4078 0 18.3563C2.27031 19.8203 4.96094 20.6562 7.8625 20.6562C17.2937 20.6562 22.45 12.8438 22.45 6.07187C22.45 5.84531 22.4422 5.62656 22.4312 5.40938C23.4484 4.6875 24.3031 3.78594 25 2.74844Z" fill="#022B69"/>
+                            </svg>                             
+                        </a>
+
+    
+                        <a href="#">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.22917 2.20834C4.22889 2.76087 4.00913 3.29067 3.61824 3.68117C3.22734 4.07168 2.69733 4.29091 2.14479 4.29063C1.59226 4.29035 1.06246 4.07059 0.671958 3.6797C0.281452 3.2888 0.062224 2.75879 0.0625003 2.20625C0.0627765 1.65372 0.282535 1.12393 0.673431 0.73342C1.06433 0.342915 1.59434 0.123686 2.14688 0.123963C2.69941 0.124239 3.2292 0.343997 3.61971 0.734893C4.01021 1.12579 4.22944 1.6558 4.22917 2.20834ZM4.29167 5.83334H0.125V18.875H4.29167V5.83334ZM10.875 5.83334H6.72917V18.875H10.8333V12.0313C10.8333 8.21875 15.8021 7.86459 15.8021 12.0313V18.875H19.9167V10.6146C19.9167 4.1875 12.5625 4.42709 10.8333 7.58334L10.875 5.83334Z" fill="#022B69"/>
+                                </svg>
+                                
+                         </a>
+                                  
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4 text-lg ">Quick Links</h3>
+                    <ul class="space-y-3 font-normal">
+                    <li><a href="loans.html">Loan</a></li>
+                    <li><a href="auto_insurance.html">Auto Insurance</a></li>
+                    <li class="mb-5"><a href="vehicle_documentation.html">Vehicle Documentation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4 text-lg ">Other Links</h3>
+                    <ul class="space-y-3 font-normal">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="mb-8 md:mb-0">
+                    <h3 class="font-bold mb-4 text-lg">Legal</h3>
+                    <ul class="space-y-3 font-normal">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Condition</a></li>
+                    </ul>
+                </div>
+        </div>
+        
+    
+        <div class="bg-mainBackground text-darkColor">
+            <p class="text-center font-normal pt-6 pb-2 ring-gray-50">
+                &copy; 2022 Zennal | All Rights Reserved. 
+            </p>
+        </div>
+    
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+<script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+    var splide = new Splide( '.splide', {
+    type   : 'loop',
+    perPage: 3,
+    perMove: 1,
+    } );
+
+    splide.mount();
+</script>
+
+
+<script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // effect: 'cube',
+        // cubeEffect: {
+        // slideShadows: false,
+        // },
+
+        // effect: 'coverflow',
+        // coverflowEffect: {
+        // rotate: 80,
+        // slideShadows: false,
+        // },
+
+        effect: 'flip',
+        flipEffect: {
+        slideShadows: false,
+        },
+
+        autoplay: {
+        delay: 5000,
+        },
+
+        // If we need pagination
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+        el: '.swiper-scrollbar',
+        },
+        });
+
+       var swiperTestimonial = new Swiper(".mySwiperTestimonial", {
+        autoplay: {
+          delay: 2500
+        },
+        direction: 'horizontal',
+        loop:true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination-testimonial",
+          clickable: true
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 0
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 17
+          }
+        },
+        navigation: {
+        nextEl: '.swiper-pagination-button-next',
+        prevEl: '.swiper-pagination-button-prev',
+        },
+      });
+
+
+      var swiperHero = new Swiper(".mySwiperHero", {
+        autoplay: {
+          delay: 2500
+        },
+        direction: 'horizontal',
+        loop:true,
+        slidesPerView: 3,
+        spaceBetween: 4,
+        pagination: {
+          el: ".swiper-pagination-hero",
+          clickable: true
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 0
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 0
+          },
+          1024: {
+            slidesPerView: 7,
+            spaceBetween: 10
+          }
+        },
+        navigation: {
+        nextEl: '.swiper-pagination-button-next',
+        prevEl: '.swiper-pagination-button-prev',
+        },
+
+       
+
+      });
+
+
+</script>
+
+
+
+</body>
+</html>

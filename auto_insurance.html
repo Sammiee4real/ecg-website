@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Auto Insurance</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+        theme: {
+        extend: {
+        fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        },
+        }
+        }
+    }
+    </script> -->
+
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+
+
+</head>
+<body class="font-sans">
+    
+      <!-- menu -->
+    <nav class="w-full bg-mainBackground text-darkColor border-gray-200 px-2 sm:px-4 py-2.5 rounded ">
+        <div class=" flex flex-wrap max-w-5xl mx-auto py-4 justify-between items-center">
+        
+        <a href="index.html" class="flex items-center">
+        <img src="images/zennal.png" class="mr-3 h-10 sm:h-14" alt="Zennal Logo">
+           
+        </a>
+    
+        <div class="flex md:order-2">
+     
+        <a href="https://app.myzennal.com/portal/login" class="bg-lightBlue hover:bg-secondaryColor hidden md:block p-2 w-24 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">Login</a>
+    
+        <button data-collapse-toggle="mobile-menu-4" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200   " aria-controls="mobile-menu-4" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+        </div>
+        
+        <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-4">
+        <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+        <li>
+        <a href="index.html" class="block py-2 pr-4 pl-3 bg-secondaryColor rounded md:bg-transparent md:text-primaryBlue md:p-0   " aria-current="page">Home</a>
+        </li>
+        <li>
+        <a href="loans.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-secondaryColor md:p-0   ">Loans</a>
+        </li>
+        <li>
+            <a href="auto_insurance.html" class="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 text-secondaryColor md:p-0   ">Auto Insurance</a>
+        </li>
+        <li>
+            <a href="vehicle_documentation.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-secondaryColor md:p-0   ">Vehicle Documentation</a>
+        </li>
+        <li>
+            <a href="about.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-secondaryColor md:p-0   ">About Us</a>
+        </li>
+        <li>
+        <a href="contact.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-secondaryColor md:p-0   ">Contact</a>
+        </li>
+        <li>
+            <a href="https://app.myzennal.com/portal/login" class="bg-secondaryColor block md:hidden p-2 w-24 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">Login</a>
+        </li>
+        </ul>
+        </div>
+    
+        </div>
+       </nav>
+
+      <!-- auto insurance -->
+      <div class="max-w-full  mb-0 py-8 px-4 md:px-0 md:py-14 bg-mainBackground">
+        
+        <div class=" w-full  grid md:grid-cols-2 gap-8 md:gap-16 md:justify-between md:items-start md:max-w-5xl md:mx-auto">
+            <div class="space-y-10 mt-16 relative md:space-y-14 ">
+            <img src="images/index3.jpg" class="absolute h-full w-auto flex justify-start object-cover object-center top-0 opacity-25" alt="">  
+                  
+                   <div class="max-w-xl ">
+                       <h2 class="text-primaryBlue text-4xl font-extrabold text-left leading-normal">Vehicle insurance made  simple</h2>
+                       <p class="mt-4 text-darkColor ">Registering and renewing your new vehicle is so easy and achievable with us</p>
+                   </div>
+                   <div>
+                    <a href="https://app.myzennal.com/portal/register" class="bg-secondaryColor md:absolute z-30 text-center inline mr-3 rounded-xl p-3 w-36 mt-5 text-sm">Get Started</a>
+                   </div>
+               </div>
+                <div class=" md:h-auto md:justify-self-end mt-8 md:mt-0 rounded-3xl w-full md:w-1/2">
+                   <img src="images/insurancehero.png" class="h-full w-full object-cover" alt="">
+              </div>
+         </div>
+       </div>
+
+ 
+       <!-- mb-10 -->
+     <div class="max-w-full mx-auto  px-4 md:px-14  py-16 bg-primaryBlue ">
+         <div class="md:max-w-5xl  md:mx-auto text-white">
+             <p class="text-center text-sm">Using technology, we are on a mission to make vehicle insurance easily accessible and affordable to Nigerians. Now you can spread payments of your insurance premium (in months) instead of the annualized plan.</p>
+             <div class="grid md:grid-cols-4 mt-6 gap-4 w-full">
+                <div class="bg-normalBlue text-darkColor p-5 space-y-2 rounded-xl">
+                    <h3 class="text-lg font-extrabold">Fast</h3>
+                    <p class="text-sm text-lightGray">Obtain a cover on your vehicle in minutes and if anything goes wrong, we ensure a fast payout.</p>
+                </div>
+                <div class="bg-normalBlue text-darkColor p-5 space-y-2 rounded-xl">
+                    <h3 class="text-lg font-extrabold">Digital</h3>
+                    <p class="text-sm text-lightGray">Manage (buy and make claims) your vehicle insurance policies 100% online.</p>
+                </div>
+                <div class="bg-normalBlue text-darkColor p-5 space-y-2 rounded-xl">
+                    <h3 class="text-lg font-extrabold">Fair</h3>
+                    <p class="text-sm text-lightGray">No hidden costs, your premium is decided solely on your chosen cover and cost of vehicle.</p>
+                </div>
+                <div class="bg-normalBlue text-darkColor p-5 space-y-2 rounded-xl">
+                    <h3 class="text-lg font-extrabold">Finance</h3>
+                    <p class="text-sm text-lightGray">Buy your vehicle insurance now and pay later. We instantly pay the insurer your premium, while you pay us back in instalments.</p>
+                </div>
+             </div>
+                   
+            </div>
+     
+    </div>
+
+
+       <!-- register new vehicle -->
+       <div class="max-w-full mx-auto mb-10 px-4 md:px-14  py-16 bg-anotherGray ">
+        <div class="grid md:grid-cols-2 gap-10 items-start w-full md:max-w-5xl md:mx-auto">
+             <div class="h-full  order-2  md:order-1">
+                 <h3 class="font-bold text-2xl text-primaryBlue">No paperwork. No worries</h3>
+                 <p class="mt-6 text-darkColor">Instant everything; Insurance cover, finance, claims </p>
+                 <div class="mt-6 text-lightGray text-sm">
+                        <ul>
+                            <li><a href="">Opportunity to buy your vehicle insurance and process your vehicle documents in one place
+                                </a>
+                            </li>
+                            <li><a href="">File claims through our App and track their status</a>
+                            </li>
+                            <li><a href="">Swift customer support via our various channels. we’ll get back to you in few minutes</a>
+                            </li>
+                        </ul>
+                 </div>
+             </div>
+             <div class="order-1 md:order-2 px-0 md:px-4"> 
+                <img src="images/nopaperwork.png" alt="">
+             </div>
+        </div>
+       </div>
+
+
+    <!-- why process with zennal -->
+    <div class="max-w-6xl mx-auto py-5 md:py-8 bg-white">
+     
+        <div class=" leading-relaxed">
+            <h3 class="text-primaryBlue text-2xl font-semibold text-center ">Why should you buy your Vehicle Insurance Policy from Zennal?</h3>
+            <p class="text-darkColor mt-3 md:mt-6 text-center">Why Choose Us</p>
+       </div>
+
+       <div class="grid md:grid-cols-4 px-2 md:px-0 gap-3 my-10 bg-white">
+                <div class="rounded-xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                    <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="75" height="75" rx="10" fill="#022B69"/>
+                    <path d="M36.1665 42.1667L45.6665 32.6667L43.9165 30.9583L36.2915 38.5833L32.0832 34.375L30.2498 36.2083L36.1665 42.1667ZM37.9998 53.625C34.1109 52.6528 30.9165 50.3958 28.4165 46.8542C25.9165 43.3125 24.6665 39.4306 24.6665 35.2083V25.2917L37.9998 20.2917L51.3332 25.2917V35.2083C51.3332 39.4306 50.0832 43.3125 47.5832 46.8542C45.0832 50.3958 41.8887 52.6528 37.9998 53.625Z" fill="white"/>
+                    </svg>                   
+                    <h4 class="text-primaryBlue font-bold mt-6 text-xl">Reliable</h4>
+                    <p class="mt-6 text-sm text-left">We have partnered with one of the best Insurance brokerage firm in Nigeria (YOA Insurance Brokers) to offer you a dependable and customer centric insurance brokerage service</p>                         
+                </div>      
+
+               <div class="rounded-xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                   <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <rect width="75" height="75" rx="10" fill="#022B69"/>
+                       <path d="M39.3332 36.4167L44.1248 41.125C44.3748 41.375 44.4998 41.6736 44.4998 42.0208C44.4998 42.3681 44.3748 42.6667 44.1248 42.9167C43.8748 43.1667 43.5832 43.2917 43.2498 43.2917C42.9165 43.2917 42.6248 43.1667 42.3748 42.9167L37.2082 37.8333C37.0693 37.6944 36.9721 37.5486 36.9165 37.3958C36.8609 37.2431 36.8332 37.0833 36.8332 36.9167V29.7917C36.8332 29.4306 36.9512 29.1319 37.1873 28.8958C37.4234 28.6597 37.7221 28.5417 38.0832 28.5417C38.4443 28.5417 38.7429 28.6597 38.979 28.8958C39.2151 29.1319 39.3332 29.4306 39.3332 29.7917V36.4167ZM38.1665 52C36.0832 52 34.1248 51.6042 32.2915 50.8125C30.4582 50.0208 28.854 48.9444 27.479 47.5833C26.104 46.2222 25.0207 44.625 24.229 42.7917C23.4373 40.9583 23.0415 39 23.0415 36.9167C23.0415 34.8333 23.4373 32.8889 24.229 31.0833C25.0207 29.2778 26.104 27.7014 27.479 26.3542C28.854 25.0069 30.4582 23.9444 32.2915 23.1667C34.1248 22.3889 36.0832 22 38.1665 22C40.3887 22 42.4929 22.4861 44.479 23.4583C46.4651 24.4306 48.1804 25.7639 49.6248 27.4583V24.2917C49.6248 23.9306 49.7429 23.6319 49.979 23.3958C50.2151 23.1597 50.5137 23.0417 50.8748 23.0417C51.2359 23.0417 51.5346 23.1597 51.7707 23.3958C52.0068 23.6319 52.1248 23.9306 52.1248 24.2917V30.4583C52.1248 30.8194 52.0068 31.1181 51.7707 31.3542C51.5346 31.5903 51.2359 31.7083 50.8748 31.7083H44.6665C44.3054 31.7083 44.0068 31.5903 43.7707 31.3542C43.5346 31.1181 43.4165 30.8194 43.4165 30.4583C43.4165 30.0972 43.5346 29.7986 43.7707 29.5625C44.0068 29.3264 44.3054 29.2083 44.6665 29.2083H47.7915C46.5693 27.7917 45.1318 26.6528 43.479 25.7917C41.8262 24.9306 40.0554 24.5 38.1665 24.5C34.6943 24.5 31.7221 25.6875 29.2498 28.0625C26.7776 30.4375 25.5415 33.3472 25.5415 36.7917C25.5415 40.3194 26.7637 43.3194 29.2082 45.7917C31.6526 48.2639 34.6387 49.5 38.1665 49.5C41.3887 49.5 44.1248 48.4583 46.3748 46.375C48.6248 44.2917 49.9859 41.6944 50.4582 38.5833C50.5137 38.25 50.6665 37.9653 50.9165 37.7292C51.1665 37.4931 51.4582 37.3889 51.7915 37.4167C52.1804 37.4444 52.479 37.5972 52.6873 37.875C52.8957 38.1528 52.9721 38.4861 52.9165 38.875C52.3887 42.625 50.7707 45.75 48.0623 48.25C45.354 50.75 42.0554 52 38.1665 52Z" fill="white"/>
+                   </svg>            
+                   <h4 class="text-primaryBlue font-bold mt-6 text-xl">Fast</h4>
+                   <p class="mt-6 text-sm text-left">Apply in a few minutes online no more repeated calls to agents before getting your vehicle documents processed</p>                         
+               </div>
+
+               <div class="rounded-xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="75" height="75" rx="10" fill="#022B69"/>
+                    <path d="M29.5417 45.375H41V42.875H29.5417V45.375ZM29.5417 38.25H46.4583V35.75H29.5417V38.25ZM29.5417 31.125H46.4583V28.625H29.5417V31.125ZM25.5 52C24.8333 52 24.25 51.75 23.75 51.25C23.25 50.75 23 50.1667 23 49.5V24.5C23 23.8333 23.25 23.25 23.75 22.75C24.25 22.25 24.8333 22 25.5 22H50.5C51.1667 22 51.75 22.25 52.25 22.75C52.75 23.25 53 23.8333 53 24.5V49.5C53 50.1667 52.75 50.75 52.25 51.25C51.75 51.75 51.1667 52 50.5 52H25.5Z" fill="white"/>
+                    </svg>
+                    
+                       
+                   <h4 class="text-primaryBlue font-bold mt-6 text-xl">Policy documents at your disposal</h4>
+                   <p class="mt-6 text-sm text-left">Copies of your policy documents are emailed within 24 hours of purchase and hard copies will be delivered to your doorstep within 72 hours (applicable to Lagos residents alone) </p>                         
+               </div>
+
+               <div class="rounded-xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="75" height="75" rx="10" fill="#022B69"/>
+                    <path d="M36.3335 52V49.5H50.5002V36.8333C50.5002 35.2222 50.1529 33.6736 49.4585 32.1875C48.7641 30.7014 47.8335 29.3889 46.6668 28.25C45.5002 27.1111 44.1668 26.2014 42.6668 25.5208C41.1668 24.8403 39.6113 24.5 38.0002 24.5C36.3891 24.5 34.8335 24.8403 33.3335 25.5208C31.8335 26.2014 30.5002 27.1111 29.3335 28.25C28.1668 29.3889 27.2363 30.7014 26.5418 32.1875C25.8474 33.6736 25.5002 35.2222 25.5002 36.8333V47H24.6668C23.7502 47 22.9654 46.6736 22.3127 46.0208C21.6599 45.3681 21.3335 44.5833 21.3335 43.6667V40.3333C21.3335 39.6944 21.4863 39.1319 21.7918 38.6458C22.0974 38.1597 22.5002 37.7639 23.0002 37.4583L23.1252 35.25C23.3752 33.2222 23.9516 31.3889 24.8543 29.75C25.7571 28.1111 26.8821 26.7222 28.2293 25.5833C29.5766 24.4444 31.0904 23.5625 32.771 22.9375C34.4516 22.3125 36.1946 22 38.0002 22C39.8335 22 41.5904 22.3125 43.271 22.9375C44.9516 23.5625 46.4585 24.4514 47.7918 25.6042C49.1252 26.7569 50.2432 28.1458 51.146 29.7708C52.0488 31.3958 52.6252 33.2083 52.8752 35.2083L53.0002 37.375C53.5002 37.625 53.9029 37.9931 54.2085 38.4792C54.5141 38.9653 54.6668 39.5 54.6668 40.0833V43.9167C54.6668 44.5278 54.5141 45.0694 54.2085 45.5417C53.9029 46.0139 53.5002 46.375 53.0002 46.625V49.5C53.0002 50.1944 52.7571 50.7847 52.271 51.2708C51.7849 51.7569 51.1946 52 50.5002 52H36.3335ZM33.0002 39.9167C32.6668 39.9167 32.3752 39.7917 32.1252 39.5417C31.8752 39.2917 31.7502 38.9861 31.7502 38.625C31.7502 38.2917 31.8752 38.0069 32.1252 37.7708C32.3752 37.5347 32.6807 37.4167 33.0418 37.4167C33.3752 37.4167 33.6599 37.5347 33.896 37.7708C34.1321 38.0069 34.2502 38.3056 34.2502 38.6667C34.2502 39 34.1321 39.2917 33.896 39.5417C33.6599 39.7917 33.3613 39.9167 33.0002 39.9167ZM43.0002 39.9167C42.6668 39.9167 42.3752 39.7917 42.1252 39.5417C41.8752 39.2917 41.7502 38.9861 41.7502 38.625C41.7502 38.2917 41.8752 38.0069 42.1252 37.7708C42.3752 37.5347 42.6807 37.4167 43.0418 37.4167C43.3752 37.4167 43.6599 37.5347 43.896 37.7708C44.1321 38.0069 44.2502 38.3056 44.2502 38.6667C44.2502 39 44.1321 39.2917 43.896 39.5417C43.6599 39.7917 43.3613 39.9167 43.0002 39.9167ZM28.0418 37.75C27.9307 36.1111 28.1599 34.625 28.7293 33.2917C29.2988 31.9583 30.0627 30.8264 31.021 29.8958C31.9793 28.9653 33.0835 28.25 34.3335 27.75C35.5835 27.25 36.8335 27 38.0835 27C40.6113 27 42.7363 27.7986 44.4585 29.3958C46.1807 30.9931 47.2363 32.9861 47.6252 35.375C45.014 35.3472 42.7154 34.6458 40.7293 33.2708C38.7432 31.8958 37.2085 30.1111 36.1252 27.9167C35.6807 30.1667 34.7432 32.1597 33.3127 33.8958C31.8821 35.6319 30.1252 36.9167 28.0418 37.75Z" fill="white"/>
+                    </svg>
+                    
+                       
+                   <h4 class="text-primaryBlue font-bold mt-4 text-xl">Efficient service and prompt customer support</h4>
+                   <p class="mt-6 text-sm text-left">Our service is available all year round and everywhere provided you are connected to internet. Also, be assured of a great customer service, anytime you decide to get in touch </p>                         
+               </div>
+
+               <div class="rounded-xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="75" height="75" rx="10" fill="#022B69"/>
+                    <path d="M38.0002 48.6667C35.2224 48.6667 33.0002 47.5625 31.3335 45.3542C29.6668 43.1458 28.8335 40.3611 28.8335 37C28.8335 33.6389 29.6668 30.8542 31.3335 28.6458C33.0002 26.4375 35.2224 25.3333 38.0002 25.3333C40.7779 25.3333 43.0002 26.4375 44.6668 28.6458C46.3335 30.8542 47.1668 33.6389 47.1668 37C47.1668 40.3611 46.3335 43.1458 44.6668 45.3542C43.0002 47.5625 40.7779 48.6667 38.0002 48.6667ZM38.0002 46.0833C40.1113 46.0833 41.6946 45.1736 42.7502 43.3542C43.8057 41.5347 44.3335 39.4167 44.3335 37C44.3335 34.5833 43.8057 32.4653 42.7502 30.6458C41.6946 28.8264 40.1113 27.9167 38.0002 27.9167C35.8891 27.9167 34.3057 28.8264 33.2502 30.6458C32.1946 32.4653 31.6668 34.5833 31.6668 37C31.6668 39.4167 32.1946 41.5347 33.2502 43.3542C34.3057 45.1736 35.8891 46.0833 38.0002 46.0833Z" fill="white"/>
+                    </svg>
+                    
+                       
+                   <h4 class="text-primaryBlue font-bold mt-4 text-xl">Zero interest loans</h4>
+                   <p class="mt-6 text-sm text-left">Our unique offering means you can purchase your car insurance and spread your premium payments for up to 6 months with our zero interest loans</p>                         
+               </div>
+
+
+               <div class="rounded-xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="75" height="75" rx="10" fill="#022B69"/>
+                    <path d="M24.125 45.417V49.208H51.875V45.417H24.125ZM24.125 52C23.347 52 22.6873 51.7293 22.146 51.188C21.604 50.646 21.333 49.986 21.333 49.208V29.792C21.333 29.014 21.604 28.354 22.146 27.812C22.6873 27.2707 23.347 27 24.125 27H28.792C28.6527 26.75 28.5483 26.4513 28.479 26.104C28.4097 25.7567 28.375 25.4303 28.375 25.125C28.375 23.7917 28.8473 22.6597 29.792 21.729C30.736 20.7983 31.861 20.333 33.167 20.333C34.0003 20.333 34.778 20.5483 35.5 20.979C36.222 21.4097 36.8193 21.9583 37.292 22.625L38 23.708L38.75 22.625C39.222 21.9303 39.8053 21.3747 40.5 20.958C41.1947 20.5413 41.9587 20.333 42.792 20.333C44.1253 20.333 45.264 20.7983 46.208 21.729C47.1527 22.6597 47.625 23.8057 47.625 25.167C47.625 25.4443 47.5903 25.736 47.521 26.042C47.4517 26.3473 47.3473 26.6667 47.208 27H51.875C52.653 27 53.3127 27.2707 53.854 27.812C54.396 28.354 54.667 29.014 54.667 29.792V49.208C54.667 49.986 54.396 50.646 53.854 51.188C53.3127 51.7293 52.653 52 51.875 52H24.125ZM24.125 40.792H51.875V29.792H42.125L45.292 34.125C45.514 34.4303 45.5833 34.7567 45.5 35.104C45.4167 35.4513 45.25 35.764 45 36.042C44.6667 36.292 44.3127 36.389 43.938 36.333C43.5627 36.2777 43.264 36.0833 43.042 35.75L38 28.792L32.917 35.75C32.667 36.0833 32.3543 36.2777 31.979 36.333C31.6043 36.389 31.292 36.292 31.042 36.042C30.7087 35.792 30.521 35.4863 30.479 35.125C30.4377 34.7637 30.528 34.4303 30.75 34.125L33.833 29.792H24.125V40.792ZM33.208 27.167C33.764 27.167 34.2363 26.9723 34.625 26.583C35.0137 26.1943 35.208 25.7083 35.208 25.125C35.208 24.5697 35.0137 24.0973 34.625 23.708C34.2363 23.3193 33.764 23.125 33.208 23.125C32.6247 23.125 32.1387 23.3193 31.75 23.708C31.3613 24.0973 31.167 24.5697 31.167 25.125C31.167 25.7083 31.3613 26.1943 31.75 26.583C32.1387 26.9723 32.6247 27.167 33.208 27.167ZM42.792 27.167C43.3753 27.167 43.8613 26.9723 44.25 26.583C44.6387 26.1943 44.833 25.7083 44.833 25.125C44.833 24.5697 44.6387 24.0973 44.25 23.708C43.8613 23.3193 43.3753 23.125 42.792 23.125C42.236 23.125 41.7637 23.3193 41.375 23.708C40.9863 24.0973 40.792 24.5697 40.792 25.125C40.792 25.7083 40.9863 26.1943 41.375 26.583C41.7637 26.9723 42.236 27.167 42.792 27.167Z" fill="white"/>
+                    </svg>
+                              
+                <h4 class="text-primaryBlue font-bold mt-4 text-xl">We give back</h4>
+                <p class="mt-6 text-sm text-left">AEarn money anytime you purchase your car insurance, repay instalments on time and give referrals. Earned points will be converted to cash</p>                         
+            </div>
+ 
+            <div class="rounded-xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="75" height="75" rx="10" fill="#022B69"/>
+                    <path d="M38 18.667C40.222 18.667 42.118 19.4517 43.688 21.021C45.2573 22.5903 46.042 24.486 46.042 26.708V30.5H48.542C49.3193 30.5 49.979 30.7707 50.521 31.312C51.0623 31.854 51.333 32.514 51.333 33.292V50.875C51.333 51.653 51.0623 52.3127 50.521 52.854C49.979 53.396 49.3193 53.667 48.542 53.667H27.458C26.6807 53.667 26.021 53.396 25.479 52.854C24.9377 52.3127 24.667 51.653 24.667 50.875V33.292C24.667 32.514 24.9377 31.854 25.479 31.312C26.021 30.7707 26.6807 30.5 27.458 30.5H29.958V26.708C29.958 24.486 30.7427 22.5903 32.312 21.021C33.882 19.4517 35.778 18.667 38 18.667ZM38 21.458C36.528 21.458 35.278 21.972 34.25 23C33.222 24.028 32.708 25.264 32.708 26.708V30.5H43.292V26.708C43.292 25.264 42.778 24.028 41.75 23C40.722 21.972 39.472 21.458 38 21.458ZM38 38.833C37.1113 38.833 36.3473 39.1663 35.708 39.833C35.0693 40.4997 34.75 41.2777 34.75 42.167C34.75 43.0277 35.0693 43.7707 35.708 44.396C36.3473 45.0207 37.1113 45.333 38 45.333C38.8887 45.333 39.6527 45.0207 40.292 44.396C40.9307 43.7707 41.25 43.0137 41.25 42.125C41.25 41.2637 40.9307 40.4997 40.292 39.833C39.6527 39.1663 38.8887 38.833 38 38.833Z" fill="white"/>
+                    </svg>
+                    
+                              
+                <h4 class="text-primaryBlue font-bold mt-4 text-xl"> A secured platform</h4>
+                <p class="mt-6 text-sm text-left">All your data and information provided on Zennal App & website is safe and encrypted using SSL technology</p>                         
+            </div>
+ 
+            <div class="rounded-xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="75" height="75" rx="10" fill="#022B69"/>
+                    <path d="M38.0002 53.6667C35.6391 53.6667 33.4446 53.243 31.4168 52.3958C29.3891 51.5486 27.6252 50.375 26.1252 48.875C24.6252 47.375 23.4516 45.6111 22.6043 43.5833C21.7571 41.5555 21.3335 39.3611 21.3335 37C21.3335 34.6667 21.7571 32.4861 22.6043 30.4583C23.4516 28.4305 24.6252 26.6667 26.1252 25.1667C27.6252 23.6667 29.3891 22.4861 31.4168 21.625C33.4446 20.7639 35.6391 20.3333 38.0002 20.3333C40.3335 20.3333 42.5141 20.7639 44.5418 21.625C46.5696 22.4861 48.3335 23.6667 49.8335 25.1667C51.3335 26.6667 52.5141 28.4305 53.3752 30.4583C54.2363 32.4861 54.6668 34.6667 54.6668 37C54.6668 39.3611 54.2363 41.5555 53.3752 43.5833C52.5141 45.6111 51.3335 47.375 49.8335 48.875C48.3335 50.375 46.5696 51.5486 44.5418 52.3958C42.5141 53.243 40.3335 53.6667 38.0002 53.6667ZM29.6668 38.125H46.3335V35.625H29.6668V38.125Z" fill="white"/>
+                </svg>             
+                <h4 class="text-primaryBlue font-bold mt-4 text-xl">No hidden fees</h4>
+                <p class="mt-6 text-sm text-left">Our technology means no more paying an insurance agent. If you ever need to buy a car insurance, it’s all online, instant and no admin or processing fees. You only pay for your premium based on the value of your car</p>                         
+            </div>
+ 
+            <div class="rounded-xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+                <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="75" height="75" rx="10" fill="#022B69"/>
+                    <path d="M39.3332 36.4167L44.1248 41.125C44.3748 41.375 44.4998 41.6736 44.4998 42.0208C44.4998 42.3681 44.3748 42.6667 44.1248 42.9167C43.8748 43.1667 43.5832 43.2917 43.2498 43.2917C42.9165 43.2917 42.6248 43.1667 42.3748 42.9167L37.2082 37.8333C37.0693 37.6944 36.9721 37.5486 36.9165 37.3958C36.8609 37.2431 36.8332 37.0833 36.8332 36.9167V29.7917C36.8332 29.4306 36.9512 29.1319 37.1873 28.8958C37.4234 28.6597 37.7221 28.5417 38.0832 28.5417C38.4443 28.5417 38.7429 28.6597 38.979 28.8958C39.2151 29.1319 39.3332 29.4306 39.3332 29.7917V36.4167ZM38.1665 52C36.0832 52 34.1248 51.6042 32.2915 50.8125C30.4582 50.0208 28.854 48.9444 27.479 47.5833C26.104 46.2222 25.0207 44.625 24.229 42.7917C23.4373 40.9583 23.0415 39 23.0415 36.9167C23.0415 34.8333 23.4373 32.8889 24.229 31.0833C25.0207 29.2778 26.104 27.7014 27.479 26.3542C28.854 25.0069 30.4582 23.9444 32.2915 23.1667C34.1248 22.3889 36.0832 22 38.1665 22C40.3887 22 42.4929 22.4861 44.479 23.4583C46.4651 24.4306 48.1804 25.7639 49.6248 27.4583V24.2917C49.6248 23.9306 49.7429 23.6319 49.979 23.3958C50.2151 23.1597 50.5137 23.0417 50.8748 23.0417C51.2359 23.0417 51.5346 23.1597 51.7707 23.3958C52.0068 23.6319 52.1248 23.9306 52.1248 24.2917V30.4583C52.1248 30.8194 52.0068 31.1181 51.7707 31.3542C51.5346 31.5903 51.2359 31.7083 50.8748 31.7083H44.6665C44.3054 31.7083 44.0068 31.5903 43.7707 31.3542C43.5346 31.1181 43.4165 30.8194 43.4165 30.4583C43.4165 30.0972 43.5346 29.7986 43.7707 29.5625C44.0068 29.3264 44.3054 29.2083 44.6665 29.2083H47.7915C46.5693 27.7917 45.1318 26.6528 43.479 25.7917C41.8262 24.9306 40.0554 24.5 38.1665 24.5C34.6943 24.5 31.7221 25.6875 29.2498 28.0625C26.7776 30.4375 25.5415 33.3472 25.5415 36.7917C25.5415 40.3194 26.7637 43.3194 29.2082 45.7917C31.6526 48.2639 34.6387 49.5 38.1665 49.5C41.3887 49.5 44.1248 48.4583 46.3748 46.375C48.6248 44.2917 49.9859 41.6944 50.4582 38.5833C50.5137 38.25 50.6665 37.9653 50.9165 37.7292C51.1665 37.4931 51.4582 37.3889 51.7915 37.4167C52.1804 37.4444 52.479 37.5972 52.6873 37.875C52.8957 38.1528 52.9721 38.4861 52.9165 38.875C52.3887 42.625 50.7707 45.75 48.0623 48.25C45.354 50.75 42.0554 52 38.1665 52Z" fill="white"/>
+                </svg>    
+                <h4 class="text-primaryBlue font-bold mt-4 text-xl">Super fast claims</h4>
+                <p class="mt-6 text-sm text-left">Claims are settled promptly once every necessary information are provided
+                </p>                         
+            </div>
+ 
+            <div class="rounded-xl bg-normalBlue text-lightGray px-4 py-8 w-full">
+             <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <rect width="75" height="75" rx="10" fill="#022B69"/>
+                 <path d="M49.9168 55.3333V47H47.4168V37H53.4585L51.0418 44.0833H54.6668L49.9168 55.3333ZM21.3335 53.6666V22.8333C21.3335 22.1944 21.5835 21.618 22.0835 21.1041C22.5835 20.5903 23.1668 20.3333 23.8335 20.3333H52.1668C52.8057 20.3333 53.3821 20.5903 53.896 21.1041C54.4099 21.618 54.6668 22.1944 54.6668 22.8333V34.5H44.9168V47H28.0002L21.3335 53.6666Z" fill="white"/>
+                 </svg>
+                 
+                 
+             <h4 class="text-primaryBlue font-bold mt-4 text-xl">Prompt decision on loan request</h4>
+             <p class="mt-6 text-sm text-left">We determine your eligibility to purchase your car insurance via loan within minutes
+             </p>                         
+         </div>
+       </div>
+
+   
+    </div>
+
+
+      <!-- how it works -->
+      <div class="max-w-full mx-auto py-8 bg-mainBackground">
+
+        <div class="leading-relaxed">
+            <h3 class="text-primaryBlue text-2xl font-semibold text-center ">What’s covered in our Vehicle Insurance offering?</h3>
+            <p class="text-darkColor mt-6 text-center">What you will Get</p>
+        </div>
+
+        <div class="grid px-2 md:px-0 md:grid-cols-3 gap-4 my-7 max-w-5xl mx-auto bg-mainBackground  ">
+            <div  class="rounded-xl text-lightGray px-3  py-4 w-full bg-white ">
+               <h4 class="text-darkColor font-bold mt-2 text-lg">Third Party Losses</h4>   
+               <p class="mt-2 text-sm text-left">In cases where your car accidentally damages someone’s car or property and/or injury to others, compensation payout is covered by our partners.</p>
+           </div>
+
+           <div  class="rounded-xl text-lightGray px-3  py-4 w-full bg-white ">
+            <h4 class="text-darkColor font-bold mt-2 text-lg">Fire & theft</h4>   
+            <p class="mt-2 text-sm text-left">if you car is accidentally damaged by fire, civil commotion, riots or unfortunately stolen, our partners will cover the costs of getting it fixed or replaced.</p>
+           </div>
+
+           <div  class="rounded-xl text-lightGray px-3  py-4 w-full bg-white ">
+            <h4 class="text-darkColor font-bold mt-2 text-lg">Vehicle Damage</h4>   
+            <p class="mt-2 text-sm text-left">Vandalism happens, accident happens. If your car is damaged as a result of any of these, our partners will get it fixed or replaced.</p>
+        </div>
+
+        <div  class="rounded-xl text-lightGray px-3  py-4 w-full bg-white ">
+            <h4 class="text-darkColor font-bold mt-2 text-lg">Natural Disasters</h4>   
+            <p class="mt-2 text-sm text-left">In cases where your car accidentally damages someone’s car or property and/or injury to others, compensation payout is covered by our partners.</p>
+        </div>
+
+        <div  class="rounded-xl text-lightGray px-3  py-4 w-full bg-white ">
+            <h4 class="text-darkColor font-bold mt-2 text-lg">Windscreen Damage </h4>   
+            <p class="mt-2 text-sm text-left">Driving with a damaged windscreen is prohibited in Nigeria. So keep an eye for cracks if it needs fixing or replacement. You will pay a small excess (if you don’t have a excess buy-back clause) and our partners (the insurers) will cover the rest. </p>
+        </div>
+
+        <div  class="rounded-xl text-lightGray px-3  py-4 w-full bg-white ">
+            <h4 class="text-darkColor font-bold mt-2 text-lg">Courtesy Vehicle </h4>   
+            <p class="mt-2 text-sm text-left">To keep you mobile if your Vehicle is not available as a result of accident, an amount is made available to you for a limited number of days for you to arrange for an alternative car (this is dependent on purchased plan).
+            </p>
+        </div>
+
+        <div  class="rounded-xl text-lightGray px-3  py-4 w-full bg-white ">
+            <h4 class="text-darkColor font-bold mt-2 text-lg">Personal Accident</h4>   
+            <p class="mt-2 text-sm text-left">If there is a vehicle accident and unfortunately, it leads to death or disability of the owner.</p>
+        </div>
+
+          
+         </div> 
+      </div>
+      
+      
+      <!-- how it works -->
+          <div class="max-w-full mx-auto py-8 bg-mainBackground">
+
+            <div class="leading-relaxed">
+                <h3 class="text-primaryBlue text-2xl font-semibold text-center ">How to apply for Zennal Vehicle Documentation</h3>
+                <p class="text-darkColor mt-6 text-center">How It Works</p>
+            </div>
+
+            <div class="relative grid px-2 md:px-0 md:grid-cols-3 gap-4 my-7 max-w-5xl mx-auto bg-mainBackground  ">
+                    <div style='background-image: url(images/1.png); padding-right:24px;'  class="rounded-xl text-lightGray pl-4 py-8 w-full bg-white bg-no-repeat bg-right">
+                        <h4 class="text-darkColor font-bold mt-4 text-xl">Zennal Website</h4>   
+                        <p class="mt-4 text-sm text-left">Click on “My Account” on the Zennal Website</p>
+                    </div>
+
+                    <div style='background-image: url(images/2.png); padding-right:24px;'  class="rounded-xl text-lightGray pl-4 py-8 w-full bg-white bg-no-repeat bg-right">
+                        <h4 class="text-darkColor font-bold mt-4 text-xl">Create your account</h4>   
+                        <p class="mt-4 text-sm text-left">Simply provide us with your vehicle details</p>                         
+                    </div>
+
+                    <div style='background-image: url(images/3.png); padding-right:24px;'  class="rounded-xl text-lightGray pl-4 py-8 w-full bg-white bg-no-repeat bg-right">
+                        <h4 class="text-darkColor font-bold mt-4 text-xl">Make Payment</h4>   
+                        <p class="mt-4 text-sm text-left">Make full payment for your vehicle documents via our secured platform</p>                         
+                    </div>
+
+                    <div style='background-image: url(images/4.png); padding-right:24px;'  class="rounded-xl text-lightGray pl-4 py-8 w-full bg-white bg-no-repeat bg-right">
+                        <h4 class="text-darkColor font-bold mt-4 text-xl">Apply for loan to finance your vehicle documentation</h4>   
+                        <p class="mt-4 text-sm text-left">your personal details will be needed to determine your eligibility for this loan</p>                         
+                    </div>
+
+                    <div style='background-image: url(images/5.png); padding-right:24px;'  class="rounded-xl text-lightGray pl-4 py-8 w-full bg-white bg-no-repeat bg-right">
+                        <h4 class="text-darkColor font-bold mt-4 text-xl">Check Eligibility</h4>   
+                        <p class="mt-4 text-sm text-left">We will review your application and let you know our decision on loan application</p>                         
+                    </div>
+
+                    <div style='background-image: url(images/6.png); padding-right:24px;'  class="rounded-xl text-lightGray pl-4 py-8 w-full bg-white bg-no-repeat bg-right">
+                        <h4 class="text-darkColor font-bold mt-4 text-xl">Not Eligibile</h4>   
+                        <p class="mt-4 text-sm text-left">If not eligible to access loan, you will be required to make full payment to continue with your request</p>                         
+                    </div>
+
+                    <div style='background-image: url(images/7.png); padding-right:24px;'  class="rounded-xl text-lightGray pl-4 py-8 w-full bg-white bg-no-repeat bg-right">
+                        <h4 class="text-darkColor font-bold mt-4 text-xl">Accept Loan Offer</h4>   
+                        <p class="mt-4 text-sm text-left">Accept the loan amount and repayment terms</p>                         
+                    </div>
+
+                    <div style='background-image: url(images/8.png); padding-right:24px;'  class="rounded-xl text-lightGray pl-4 py-8 w-full bg-white bg-no-repeat bg-right">
+                        <h4 class="text-darkColor font-bold mt-4 text-xl">Make Equity Payment</h4>   
+                        <p class="mt-4 text-sm text-left">When your loan is approved, you will make an instant equity payment to continue the process (a proportion of the amount charged)</p>                         
+                    </div>
+
+                    <div style='background-image: url(images/9.png); padding-right:24px;'  class="rounded-xl text-lightGray pl-4 py-8 w-full bg-white bg-no-repeat bg-right">
+                        <h4 class="text-darkColor font-bold mt-4 text-xl">Receive Policy Certificate</h4>   
+                        <p class="mt-4 text-sm text-left">Your policy certificate will be sent to you via e-mail and a copy is available on your MyZennal Account. You can equally request for </p>                         
+                    </div>
+            </div>  
+
+            <div  class="max-w-5xl mx-auto w-full px-3 md:px-0  text-center  ">
+                     <a href="https://app.myzennal.com/portal/register.php" class="bg-primaryBlue inline-block rounded-xl p-3 w-72 mt-6 mb-6 text-md uppercase text-white">Get auto insurance today</a>  
+            </div>
+
+      </div>
+
+
+      <div class="max-w-full mx-auto mb-10 px-4 md:px-14  py-9 bg-secondaryColor ">
+        <div class="md:max-w-5xl  md:mx-auto text-primaryBlue">
+            <p class="text-center font-bold text-lg">How To Make Claims For Your Car Insurance Through Zennal</p>
+            <div class="grid md:grid-cols-3 mt-4 gap-4 w-full">
+                <div class="bg-mainBackground text-darkColor p-5 space-x-4 rounded-xl flex justify-between items-center">
+                    <span class="rounded-full text-4xl bg-secondaryColor text-white px-2">1</span>
+                    <p class="text-sm text-lightGray">Log on to your “MyZennal Account.</p>
+                </div>
+                <div class="bg-mainBackground text-darkColor p-5 space-x-4 rounded-xl flex justify-between items-center">
+                    <span class="rounded-full text-4xl bg-secondaryColor text-white px-2">2</span>
+                    <p class="text-sm text-lightGray">Click on Claims, complete the form by providing all the necessary information.</p>
+                </div>
+               <div class="bg-mainBackground text-darkColor p-5 space-x-4 rounded-xl flex justify-between items-center">
+                   <span class="rounded-full text-4xl bg-secondaryColor text-white px-2">3</span>
+                   <p class="text-sm text-lightGray">No hidden costs, your premium is decided solely on your chosen cover and cost of vehicle.</p>
+               </div>
+             
+            </div>
+                  
+           </div>
+    
+   </div>
+
+
+
+
+   <div class="max-w-5xl py-9 mx-auto overflow-x-scroll">
+    <div class="leading-relaxed">
+        <h3 class="text-primaryBlue text-2xl font-semibold text-center ">Compare Packages</h3>
+    </div>
+   <table class="w-full mt-8 ">
+    <thead class="bg-normalBlue p-4 ring-1 ring-gray-100 ">
+      <tr class="text-left  p-4 ring-1 ring-gray-100">
+        <th class="px-4 py-2 font-normal text-sm">Benefits </th>
+        <th class="px-4 py-2 font-normal text-sm">Third-Party</th>
+        <th class="px-4 py-2 font-normal text-sm">Enhance Third-Party</th>
+        <th class="px-4 py-2 font-normal text-sm">Comprehensive</th>
+      </tr>
+    </thead>
+    <tbody class="py-9 ring-1 ring-gray-200">
+        <tr class="py-9 ring-1 ring-gray-200">
+        <td class="px-4 py-2 text-lightGray text-sm">Damages/Losses to own car due to an accident</td>
+        <td >
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+      </tr>
+
+      <tr class="py-9 ring-1 ring-gray-200">
+        <td class="px-4 py-2 text-lightGray text-sm">Damages/Losses to own car in case of fire</td>
+        <td >
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+      </tr>
+
+      <tr class="py-9 ring-1 ring-gray-200">
+        <td class="px-4 py-2 text-lightGray text-sm">Damages/Losses to own car in case of a natural calamity</td>
+        <td >
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+      </tr>
+
+      <tr class="py-9 ring-1 ring-gray-200">
+        <td class="px-4 py-2 text-lightGray text-sm">Damages to Third-Party Vehicle</td>
+        <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+      </tr>
+
+      <tr class="py-9 ring-1 ring-gray-200">
+        <td class="px-4 py-2 text-lightGray text-sm">Damages to Third-Party Property</td>
+        <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+      </tr>
+
+      <tr class="py-9 ring-1 ring-gray-200">
+        <td class="px-4 py-2 text-lightGray text-sm">Personal Accident Cover</td>
+        <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+        <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+      </tr>
+
+      <tr class="py-9 ring-1 ring-gray-200">
+        <td class="px-4 py-2 text-lightGray text-sm">Injuries/Death of a Third-Party Person</td>
+        <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+        <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+      </tr>
+
+      <tr class="py-9 ring-1 ring-gray-200">
+        <td class="px-4 py-2 text-lightGray text-sm">Own Accidental Damage</td>
+        <td >
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+      </tr>
+
+      <tr class="py-9 ring-1 ring-gray-200">
+        <td class="px-4 py-2 text-lightGray text-sm">Theft of your car</td>
+        <td >
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+      </tr>
+
+      <tr class="py-9 ring-1 ring-gray-200">
+        <td class="px-4 py-2 text-lightGray text-sm">Permanent Disability Benefit</td>
+        <td >
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+      </tr>
+
+      <tr class="py-9 ring-1 ring-gray-200">
+        <td class="px-4 py-2 text-lightGray text-sm">Towing Vehicle Benefit</td>
+        <td >
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+      </tr>
+
+      <tr class="py-9 ring-1 ring-gray-200">
+        <td class="px-4 py-2 text-lightGray text-sm">Vehicle Tracker</td>
+        <td >
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+      </tr>
+
+      <tr class="py-9 ring-1 ring-gray-200">
+        <td class="px-4 py-2 text-lightGray text-sm">Insured Medical Liability</td>
+        <td >
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+      </tr>
+
+      <tr class="py-9 ring-1 ring-gray-200">
+        <td class="px-4 py-2 text-lightGray text-sm">Replacement Vehicle</td>
+        <td >
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+      </tr>
+
+      <tr class="py-9 ring-1 ring-gray-200">
+        <td class="px-4 py-2 text-lightGray text-sm">Authorized Repair (up to 5% of Sum Insured)</td>
+        <td >
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+      </tr>
+
+      <tr class="py-9 ring-1 ring-gray-200">
+        <td class="px-4 py-2 text-lightGray text-sm">Flood and Storm</td>
+        <td >
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.40296 14.597C6.54671 14.7407 6.71442 14.8126 6.90609 14.8126C7.09775 14.8126 7.26546 14.7407 7.40921 14.597L10.4998 11.5063L13.6144 14.6209C13.7422 14.7487 13.9059 14.8086 14.1056 14.8006C14.3052 14.7926 14.4689 14.7247 14.5967 14.597C14.7405 14.4532 14.8123 14.2855 14.8123 14.0938C14.8123 13.9022 14.7405 13.7345 14.5967 13.5907L11.5061 10.5001L14.6207 7.3855C14.7484 7.25772 14.8083 7.09401 14.8004 6.89435C14.7924 6.6947 14.7245 6.53098 14.5967 6.40321C14.453 6.25946 14.2853 6.18758 14.0936 6.18758C13.9019 6.18758 13.7342 6.25946 13.5905 6.40321L10.4998 9.49383L7.38525 6.37925C7.25748 6.25147 7.09376 6.19157 6.89411 6.19956C6.69446 6.20755 6.53074 6.27543 6.40296 6.40321C6.25921 6.54696 6.18734 6.71466 6.18734 6.90633C6.18734 7.098 6.25921 7.26571 6.40296 7.40946L9.49359 10.5001L6.379 13.6147C6.25123 13.7424 6.19133 13.9062 6.19932 14.1058C6.2073 14.3055 6.27518 14.4692 6.40296 14.597ZM10.4998 20.0834C9.1422 20.0834 7.88039 19.8398 6.71442 19.3527C5.54845 18.8655 4.53421 18.1907 3.67171 17.3282C2.80921 16.4657 2.13439 15.4515 1.64723 14.2855C1.16008 13.1195 0.916504 11.8577 0.916504 10.5001C0.916504 9.15841 1.16008 7.90459 1.64723 6.73862C2.13439 5.57265 2.80921 4.55841 3.67171 3.69591C4.53421 2.83341 5.54845 2.1546 6.71442 1.65946C7.88039 1.16432 9.1422 0.916748 10.4998 0.916748C11.8415 0.916748 13.0953 1.16432 14.2613 1.65946C15.4273 2.1546 16.4415 2.83341 17.304 3.69591C18.1665 4.55841 18.8453 5.57265 19.3405 6.73862C19.8356 7.90459 20.0832 9.15841 20.0832 10.5001C20.0832 11.8577 19.8356 13.1195 19.3405 14.2855C18.8453 15.4515 18.1665 16.4657 17.304 17.3282C16.4415 18.1907 15.4273 18.8655 14.2613 19.3527C13.0953 19.8398 11.8415 20.0834 10.4998 20.0834ZM10.4998 18.6459C12.7359 18.6459 14.6526 17.8473 16.2498 16.2501C17.8471 14.6529 18.6457 12.7362 18.6457 10.5001C18.6457 8.26397 17.8471 6.3473 16.2498 4.75008C14.6526 3.15286 12.7359 2.35425 10.4998 2.35425C8.26373 2.35425 6.34706 3.15286 4.74984 4.75008C3.15262 6.3473 2.354 8.26397 2.354 10.5001C2.354 12.7362 3.15262 14.6529 4.74984 16.2501C6.34706 17.8473 8.26373 18.6459 10.4998 18.6459Z" fill="#828282"/>
+            </svg>
+         </td>
+         <td>
+            <svg class="ml-6" width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6764 7.64904C19.8041 8.09626 19.904 8.55946 19.9758 9.03862C20.0477 9.51779 20.0837 10.0049 20.0837 10.5001C20.0837 11.8577 19.8361 13.1195 19.341 14.2855C18.8458 15.4515 18.167 16.4657 17.3045 17.3282C16.442 18.1907 15.4278 18.8655 14.2618 19.3527C13.0958 19.8398 11.842 20.0834 10.5003 20.0834C9.14269 20.0834 7.88088 19.8398 6.71491 19.3527C5.54894 18.8655 4.5347 18.1907 3.6722 17.3282C2.8097 16.4657 2.13487 15.4515 1.64772 14.2855C1.16057 13.1195 0.916992 11.8577 0.916992 10.5001C0.916992 9.15841 1.16057 7.90459 1.64772 6.73862C2.13487 5.57265 2.8097 4.55841 3.6722 3.69591C4.5347 2.83341 5.54894 2.1546 6.71491 1.65946C7.88088 1.16432 9.14269 0.916748 10.5003 0.916748C11.5385 0.916748 12.5168 1.06848 13.4352 1.37196C14.3536 1.67543 15.2121 2.08272 16.0107 2.59383C16.1864 2.70564 16.2863 2.85737 16.3102 3.04904C16.3342 3.24071 16.2823 3.4164 16.1545 3.57612C16.0267 3.73585 15.867 3.83168 15.6753 3.86362C15.4837 3.89557 15.3 3.85564 15.1243 3.74383C14.4535 3.32855 13.7307 2.99314 12.9561 2.73758C12.1814 2.48203 11.3628 2.35425 10.5003 2.35425C8.18435 2.35425 6.24772 3.13289 4.69043 4.69019C3.13314 6.24748 2.35449 8.18411 2.35449 10.5001C2.35449 12.8161 3.13314 14.7527 4.69043 16.31C6.24772 17.8673 8.18435 18.6459 10.5003 18.6459C12.8163 18.6459 14.7529 17.8673 16.3102 16.31C17.8675 14.7527 18.6462 12.8161 18.6462 10.5001C18.6462 10.1008 18.6222 9.71744 18.5743 9.35008C18.5264 8.98272 18.4545 8.61536 18.3587 8.248C18.3107 8.05633 18.3227 7.86466 18.3946 7.673C18.4665 7.48133 18.5903 7.34557 18.7659 7.26571C18.9416 7.18585 19.1213 7.17786 19.305 7.24175C19.4887 7.30564 19.6125 7.4414 19.6764 7.64904ZM8.58366 14.3574L5.66074 11.4105C5.51699 11.2667 5.44512 11.0911 5.44512 10.8834C5.44512 10.6758 5.52498 10.4921 5.6847 10.3324C5.82845 10.1886 6.00415 10.1167 6.21178 10.1167C6.41942 10.1167 6.6031 10.1886 6.76283 10.3324L9.08678 12.6803L18.4785 3.28862C18.6222 3.14487 18.7979 3.06901 19.0055 3.06102C19.2132 3.05303 19.3969 3.1289 19.5566 3.28862C19.7163 3.44835 19.7962 3.63203 19.7962 3.83966C19.7962 4.0473 19.7163 4.23098 19.5566 4.39071L9.58991 14.3574C9.44616 14.5011 9.27446 14.573 9.0748 14.573C8.87515 14.573 8.71144 14.5011 8.58366 14.3574Z" fill="#16B1A2"/>
+            </svg>                
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+
+</div>
+
+   <!-- why process with zennal -->
+   <div class="w-full  py-5 md:py-8 bg-mainBackground">
+     <div class="max-w-6xl mx-auto">
+
+        <div class=" leading-relaxed">
+            <h3 class="text-primaryBlue text-2xl font-semibold text-center ">What is the Difference Between Comprehensive and Third Party Insurance?</h3>
+            <p class="text-darkColor mt-3 md:mt-6 text-center">Compare</p>
+       </div>
+    
+       <div class="grid md:grid-cols-3 px-2 md:px-0 gap-6 my-10">
+            
+            <div class="rounded-xl  border-t-4 border-t-secondaryColor bg-white text-lightGray px-4 py-4 w-full">
+                <p class="mt-6 text-sm text-left">The main difference between third-party and comprehensive insurance is the kind of coverage it offers. While a Third-Party insurance only covers you against third-party damages and losses, a comprehensive car insurance will cover for your own damages as well.</p>                         
+            </div>
+    
+            <div class="rounded-xl  border-t-4 border-t-secondaryColor bg-white text-lightGray px-4 py-4 w-full">
+                <p class="mt-6 text-sm text-left">To protect you from both hefty fines, damages and losses that could arise due to unforeseen circumstances such as accidents, collisions, floods, theft, et al, it’s important to understand the difference between a comprehensive car insurance and third party car insurance and accordingly decide on what will suit you and your car better.</p>                         
+            </div>
+    
+            <div class="rounded-xl  border-t-4 border-t-secondaryColor bg-white text-lightGray px-4 py-4 w-full">
+                <p class="mt-6 text-sm text-left">Choosing the right kind of insurance for your vehicle is a critical decision to make. A basic insurance that covers for third party is a minimum required by law in Nigeria. Not having one can lead to traffic violations  and can even lead to your car being impounded by law enforcement agents.</p>                         
+            </div>
+
+       </div>
+
+     </div>
+    
+
+
+</div>
+
+
+
+    
+     <!-- faqs -->
+     <div class="w-full md:max-w-4xl mx-auto py-4 px-2 md:px-0 md:py-8 my-10 bg-white">
+
+        <div class="leading-relaxed">
+            <h3 class="text-primaryBlue text-2xl font-semibold text-center ">Frequently Asked Questions</h3>
+            <p class="text-darkColor mb-3 mt-3 md:mt-4 text-center">Get the answers you need</p>
+        </div>
+
+        <div id="accordion-collapse w-full md:w-3/6 mt-20 md:mx-auto" data-accordion="collapse">
+            
+            <div class="mb-2 shadow-md shadow-lightGray">
+                <h2 id="accordion-collapse-heading-1">
+                    <button type="button" 
+                            class="flex justify-between items-center
+                            px-6 py-3 mt-4  ring-1 ring-lightGray rounded-tr-lg 
+                            p-5 w-full font-medium text-left rounded-tl-lg 
+                            border border-b-0 border-gray-200 focus:ring-1 
+                            focus:ring-lightGray 
+                            hover:bg-gray-100 
+                            text-gray-900 "
+                            data-accordion-target="#accordion-collapse-body-1"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-1
+                            ">
+                    <span class="text-primaryBlue font-bold">Can I buy a standalone own damage car insurance policy for my vehicle?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-1" aria-labelledby="accordion-collapse-heading-1">
+                    <div class="p-2 md:p-5 text-sm border border-b-0 border-gray-200    ">
+                        <p class="mb-2 text-gray-500 ">If you already have an existing third-party car insurance with us or another insurer, you can go for an own damage car insurance policy to protect your own car too from damages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2 shadow-md shadow-lightGray">
+                <h2 id="accordion-collapse-heading-2">
+                    <button type="button" 
+                            class="flex justify-between items-center
+                            px-6 py-3 mt-4  ring-1 ring-lightGray rounded-tr-lg 
+                            p-5 w-full font-medium text-left rounded-tl-lg 
+                            border border-b-0 border-gray-200 focus:ring-1 
+                            focus:ring-lightGray 
+                            hover:bg-gray-100  
+                            text-gray-900 "
+                            data-accordion-target="#accordion-collapse-body-2"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-2
+                            ">
+                    <span class="text-primaryBlue font-bold">What is the coverage of the insurance policy?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-2" aria-labelledby="accordion-collapse-heading-2">
+                    <div class="p-2 md:p-5 text-sm border border-b-0">
+                        <p class="mb-2 text-gray-500 ">Comprehensive Insurance covers your car in the event of unforeseen circumstances. Please refer to “compare plans” for details on the coverage available of your chosen plan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2 shadow-md shadow-lightGray">
+                <h2 id="accordion-collapse-heading-3">
+                    <button type="button" 
+                            class="flex justify-between items-center
+                            px-6 py-3 mt-4  ring-1 ring-lightGray rounded-tr-lg 
+                            p-5 w-full font-medium text-left rounded-tl-lg 
+                            border border-b-0 border-gray-200 focus:ring-1 
+                            focus:ring-lightGray      
+                            hover:bg-gray-100    bg-gray-100   
+                            text-gray-900   "
+                            data-accordion-target="#accordion-collapse-body-3"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-3
+                            ">
+                    <span class="text-primaryBlue font-bold">Which states are covered by your service?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-3" aria-labelledby="accordion-collapse-heading-3">
+                    <div class="p-2 md:p-5 text-sm border border-b-0 border-gray-200      ">
+                        <p class="mb-2 text-gray-500   ">This is dependent on the type of vehicle documents you have requested for. You have the liberty to choose the documents you want just by a click and an aggregate cost will be displayed.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2 shadow-md shadow-lightGray">
+                <h2 id="accordion-collapse-heading-4">
+                    <button type="button" 
+                            class="flex justify-between items-center
+                            px-6 py-3 mt-4  ring-1 ring-lightGray rounded-tr-lg 
+                            p-5 w-full font-medium text-left rounded-tl-lg 
+                            border border-b-0 border-gray-200 focus:ring-1 
+                            focus:ring-lightGray      
+                            hover:bg-gray-100    bg-gray-100   
+                            text-gray-900   "
+                            data-accordion-target="#accordion-collapse-body-4"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-4
+                            ">
+                    <span class="text-primaryBlue font-bold">How long does coverage on my car insurance lasts?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-4" aria-labelledby="accordion-collapse-heading-4">
+                    <div class="p-2 md:p-5 text-sm border border-b-0 border-gray-200      ">
+                        <p class="mb-2 text-gray-500   ">The coverage on every purchased car insurance policy in Nigeria is one (1) year. Once this end, you are expected to purchase another policy to keep enjoying coverage</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2 shadow-md shadow-lightGray">
+                <h2 id="accordion-collapse-heading-5">
+                    <button type="button" 
+                            class="flex justify-between items-center
+                            px-6 py-3 mt-4  ring-1 ring-lightGray rounded-tr-lg 
+                            p-5 w-full font-medium text-left rounded-tl-lg 
+                            border border-b-0 border-gray-200 focus:ring-1 
+                            focus:ring-lightGray      
+                            hover:bg-gray-100    bg-gray-100   
+                            text-gray-900   "
+                            data-accordion-target="#accordion-collapse-body-5"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-5
+                            ">
+                    <span class="text-primaryBlue font-bold">Which is a better car insurance, comprehensive car insurance or a third-party liability insurance?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-5" aria-labelledby="accordion-collapse-heading-5">
+                    <div class="p-2 md:p-5 text-sm border border-b-0 border-gray-200      ">
+                        <p class="mb-2 text-gray-500   ">Taking a comprehensive car insurance cover is always advisable as it provides complete protection of not only someone else’s car like a Third-Party car insurance, but also the Own damages to your car, as well as any injury to the owner driver.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2 shadow-md shadow-lightGray">
+                <h2 id="accordion-collapse-heading-6">
+                    <button type="button" 
+                            class="flex justify-between items-center
+                            px-6 py-3 mt-4  ring-1 ring-lightGray rounded-tr-lg 
+                            p-5 w-full font-medium text-left rounded-tl-lg 
+                            border border-b-0 border-gray-200 focus:ring-1 
+                            focus:ring-lightGray      
+                            hover:bg-gray-100    bg-gray-100   
+                            text-gray-900   "
+                            data-accordion-target="#accordion-collapse-body-6"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-6
+                            ">
+                    <span class="text-primaryBlue font-bold">What does premium mean?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-6" aria-labelledby="accordion-collapse-heading-6">
+                    <div class="p-2 md:p-5 text-sm border border-b-0 border-gray-200      ">
+                        <p class="mb-2 text-gray-500   ">A premium is the recurrent fee you pay to an insurance company to keep your policy active and retain the ability to make a claim.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2 shadow-md shadow-lightGray">
+                <h2 id="accordion-collapse-heading-7">
+                    <button type="button" 
+                            class="flex justify-between items-center
+                            px-6 py-3 mt-4  ring-1 ring-lightGray rounded-tr-lg 
+                            p-5 w-full font-medium text-left rounded-tl-lg 
+                            border border-b-0 border-gray-200 focus:ring-1 
+                            focus:ring-lightGray      
+                            hover:bg-gray-100    bg-gray-100   
+                            text-gray-900   "
+                            data-accordion-target="#accordion-collapse-body-7"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-7
+                            ">
+                    <span class="text-primaryBlue font-bold">How can I pay for my policy?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-7" aria-labelledby="accordion-collapse-heading-7">
+                    <div class="p-2 md:p-5 text-sm border border-b-0 border-gray-200      ">
+                        <p class="mb-2 text-gray-500   ">You can pay for your insurance in one of two ways: Annually - pay for your whole premium in one go.For this method, you'll need to fund your account with the amount equivalent to the premium and you will be debited (discounts applies) ‍Monthly - pay for your premium every month over the year.For this method, you'll be able to use a debit card for the 30% upfront payment, and the remaining 70% will be paid via direct debit from a bank account. You can choose whether you would like to pay annually or monthly when you get your quote with us. More information about paying annually When do I have to pay if I choose to pay in one go?If you choose to pay annually, you'll be required to pay for your full premium in one go (discounts applies). You'll be taken to the payment page after you click Continue to buy. If your policy start date is in the future, you would pay your whole premium for the year on the day you buy your policy, not the day your policy starts. More information about paying monthly How does it work?If you choose to pay monthly, you will make a payment of 30% of your whole premium when you buy your policy while we pay the balance to the insurer on your behalf. Then, we will create a payment plan for you to pay us the remaining 70% over the rest of the year depending on the number of months chosen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2 shadow-md shadow-lightGray">
+                <h2 id="accordion-collapse-heading-8">
+                    <button type="button" 
+                            class="flex justify-between items-center
+                            px-6 py-3 mt-4  ring-1 ring-lightGray rounded-tr-lg 
+                            p-5 w-full font-medium text-left rounded-tl-lg 
+                            border border-b-0 border-gray-200 focus:ring-1 
+                            focus:ring-lightGray      
+                            hover:bg-gray-100    bg-gray-100   
+                            text-gray-900   "
+                            data-accordion-target="#accordion-collapse-body-8"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-8
+                            ">
+                    <span class="text-primaryBlue font-bold">Are passengers covered by car insurance?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-8" aria-labelledby="accordion-collapse-heading-8">
+                    <div class="p-2 md:p-5 text-sm border border-b-0 border-gray-200      ">
+                        <p class="mb-2 text-gray-500   ">In a comprehensive car insurance policy, usually only the owner driver is covered in case of any personal accident. However, some of our plans cover passenger liability. If you want this extra cover, kindly purchase any of these plans</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2 shadow-md shadow-lightGray">
+                <h2 id="accordion-collapse-heading-9">
+                    <button type="button" 
+                            class="flex justify-between items-center
+                            px-6 py-3 mt-4  ring-1 ring-lightGray rounded-tr-lg 
+                            p-5 w-full font-medium text-left rounded-tl-lg 
+                            border border-b-0 border-gray-200 focus:ring-1 
+                            focus:ring-lightGray      
+                            hover:bg-gray-100    bg-gray-100   
+                            text-gray-900   "
+                            data-accordion-target="#accordion-collapse-body-9"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-9
+                            ">
+                    <span class="text-primaryBlue font-bold">How do I determine the applicable rate (premium) for my car insurance?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-9" aria-labelledby="accordion-collapse-heading-9">
+                    <div class="p-2 md:p-5 text-sm border border-b-0 border-gray-200      ">
+                        <p class="mb-2 text-gray-500   ">Amount payable as premium for your car insurance is determined based on the value of your car and the plan you choose. Different rates and benefits (coverage) applies to different plans. Please check “compare plans” for details on suitable plans that meets your appetite.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2 shadow-md shadow-lightGray">
+                <h2 id="accordion-collapse-heading-10">
+                    <button type="button" 
+                            class="flex justify-between items-center
+                            px-6 py-3 mt-4  ring-1 ring-lightGray rounded-tr-lg 
+                            p-5 w-full font-medium text-left rounded-tl-lg 
+                            border border-b-0 border-gray-200 focus:ring-1 
+                            focus:ring-lightGray      
+                            hover:bg-gray-100    bg-gray-100   
+                            text-gray-900   "
+                            data-accordion-target="#accordion-collapse-body-10"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-10
+                            ">
+                    <span class="text-primaryBlue font-bold">When will I pay my first monthly payment?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-10" aria-labelledby="accordion-collapse-heading-10">
+                    <div class="p-2 md:p-5 text-sm border border-b-0 border-gray-200      ">
+                        <p class="mb-2 text-gray-500   ">30 days after your policy start date. If your policy start date is the 1st January, you will pay 30% of your premium on 1st January and then your first monthly payment will be due on the 31st January.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+
+
+        </div>
+    
+      </div>
+
+      
+        <!-- footer 1 -->
+        <footer class="w-full md:max-w-full pt-16 md:pt-24 pb-14 md:pb-10 divide-y divide-gray-200 bg-mainBackground">
+            <div class="w-full md:max-w-5xl font-light text-md text-darkColor mx-auto items-start grid md:grid-cols-4 gap-8 px-4">
+                    <div class="md:mr-5">
+                        <a href="index.html">
+                            <img src="images/zennal.png" alt="">
+                        </a>
+                        <p class=" leading-tight text-sm mb-12">
+                            Providing Nigerians a single
+                            channel for all financial services.
+                            Everyone deserves to be served right. 
+                        </p>
+                        <div class="flex space-x-8 md:space-x-6 items-center mb-6 ">
+                            <a href="https://www.facebook.com/Zennal-100700569210063">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.875 0H3.125C1.40156 0 0 1.40156 0 3.125V21.875C0 23.5984 1.40156 25 3.125 25H12.5V16.4062H9.375V12.5H12.5V9.375C12.5 6.78594 14.5984 4.6875 17.1875 4.6875H20.3125V8.59375H18.75C17.8875 8.59375 17.1875 8.5125 17.1875 9.375V12.5H21.0938L19.5312 16.4062H17.1875V25H21.875C23.5984 25 25 23.5984 25 21.875V3.125C25 1.40156 23.5984 0 21.875 0Z" fill="#022B69"/>
+                                </svg>                                
+                            </a>
+    
+                            <a href="https://www.instagram.com/zennalng/">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.1875 0H7.8125C3.49844 0 0 3.49844 0 7.8125V17.1875C0 21.5016 3.49844 25 7.8125 25H17.1875C21.5016 25 25 21.5016 25 17.1875V7.8125C25 3.49844 21.5016 0 17.1875 0ZM22.6562 17.1875C22.6562 20.2031 20.2031 22.6562 17.1875 22.6562H7.8125C4.79688 22.6562 2.34375 20.2031 2.34375 17.1875V7.8125C2.34375 4.79688 4.79688 2.34375 7.8125 2.34375H17.1875C20.2031 2.34375 22.6562 4.79688 22.6562 7.8125V17.1875Z" fill="#022B69"/>
+                                    <path d="M12.5 6.25C9.04844 6.25 6.25 9.04844 6.25 12.5C6.25 15.9516 9.04844 18.75 12.5 18.75C15.9516 18.75 18.75 15.9516 18.75 12.5C18.75 9.04844 15.9516 6.25 12.5 6.25ZM12.5 16.4062C10.3469 16.4062 8.59375 14.6531 8.59375 12.5C8.59375 10.3453 10.3469 8.59375 12.5 8.59375C14.6531 8.59375 16.4062 10.3453 16.4062 12.5C16.4062 14.6531 14.6531 16.4062 12.5 16.4062Z" fill="#022B69"/>
+                                </svg>                                                            
+                            </a>
+        
+                            <a href="https://twitter.com/MyZennal ">
+                                <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25 2.74844C24.0703 3.15625 23.0797 3.42656 22.0469 3.55781C23.1094 2.92344 23.9203 1.92656 24.3016 0.725C23.3109 1.31562 22.2172 1.73281 21.0516 1.96563C20.1109 0.964063 18.7703 0.34375 17.3078 0.34375C14.4703 0.34375 12.1859 2.64688 12.1859 5.47031C12.1859 5.87656 12.2203 6.26719 12.3047 6.63906C8.04375 6.43125 4.27344 4.38906 1.74062 1.27813C1.29844 2.04531 1.03906 2.92344 1.03906 3.86875C1.03906 5.64375 1.95312 7.21719 3.31562 8.12812C2.49219 8.1125 1.68437 7.87344 1 7.49688C1 7.5125 1 7.53281 1 7.55312C1 10.0437 2.77656 12.1125 5.10625 12.5891C4.68906 12.7031 4.23438 12.7578 3.7625 12.7578C3.43438 12.7578 3.10312 12.7391 2.79219 12.6703C3.45625 14.7 5.34063 16.1922 7.58125 16.2406C5.8375 17.6047 3.62344 18.4266 1.22656 18.4266C0.80625 18.4266 0.403125 18.4078 0 18.3563C2.27031 19.8203 4.96094 20.6562 7.8625 20.6562C17.2937 20.6562 22.45 12.8438 22.45 6.07187C22.45 5.84531 22.4422 5.62656 22.4312 5.40938C23.4484 4.6875 24.3031 3.78594 25 2.74844Z" fill="#022B69"/>
+                                </svg>                             
+                            </a>
+    
+        
+                            <a href="#">
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.22917 2.20834C4.22889 2.76087 4.00913 3.29067 3.61824 3.68117C3.22734 4.07168 2.69733 4.29091 2.14479 4.29063C1.59226 4.29035 1.06246 4.07059 0.671958 3.6797C0.281452 3.2888 0.062224 2.75879 0.0625003 2.20625C0.0627765 1.65372 0.282535 1.12393 0.673431 0.73342C1.06433 0.342915 1.59434 0.123686 2.14688 0.123963C2.69941 0.124239 3.2292 0.343997 3.61971 0.734893C4.01021 1.12579 4.22944 1.6558 4.22917 2.20834ZM4.29167 5.83334H0.125V18.875H4.29167V5.83334ZM10.875 5.83334H6.72917V18.875H10.8333V12.0313C10.8333 8.21875 15.8021 7.86459 15.8021 12.0313V18.875H19.9167V10.6146C19.9167 4.1875 12.5625 4.42709 10.8333 7.58334L10.875 5.83334Z" fill="#022B69"/>
+                                    </svg>
+                                    
+                             </a>
+                                      
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4 text-lg ">Quick Links</h3>
+                        <ul class="space-y-3 font-normal">
+                        <li><a href="loans.html">Loan</a></li>
+                        <li><a href="auto_insurance.html">Auto Insurance</a></li>
+                        <li class="mb-5"><a href="vehicle_documentation.html">Vehicle Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4 text-lg ">Other Links</h3>
+                        <ul class="space-y-3 font-normal">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="mb-8 md:mb-0">
+                        <h3 class="font-bold mb-4 text-lg">Legal</h3>
+                        <ul class="space-y-3 font-normal">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Condition</a></li>
+                        </ul>
+                    </div>
+            </div>
+            
+        
+            <div class="bg-mainBackground text-darkColor">
+                <p class="text-center font-normal pt-6 pb-2 ring-gray-50">
+                    &copy; 2022 Zennal | All Rights Reserved. 
+                </p>
+            </div>
+        
+        </footer>
+
+<script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+</body>
+</html>
